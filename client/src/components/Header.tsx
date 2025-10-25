@@ -16,17 +16,17 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-border">
-      <nav className="container flex items-center justify-between py-4">
+    <header className="bg-white/98 backdrop-blur-md sticky top-0 z-50 border-b border-border/50">
+      <nav className="container flex items-center justify-between py-5">
         {/* Logo */}
         <Link href="/">
-          <div className="flex items-center gap-2 cursor-pointer">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">AH</span>
+          <div className="flex items-center gap-3 cursor-pointer">
+            <div className="w-11 h-11 bg-primary rounded-xl flex items-center justify-center shadow-sm">
+              <span className="text-primary-foreground font-bold text-lg">AH</span>
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-lg leading-tight">Adelaide Hills</span>
-              <span className="text-sm text-muted-foreground leading-tight">Energy Consultation</span>
+              <span className="font-bold text-lg leading-tight tracking-tight">Adelaide Hills</span>
+              <span className="text-xs text-muted-foreground leading-tight font-sans">Energy Consultation</span>
             </div>
           </div>
         </Link>
@@ -36,15 +36,15 @@ export default function Header() {
           {navigation.map((item) => (
             <Link key={item.name} href={item.href}>
               <span
-                className={`text-sm font-medium transition-colors hover:text-primary cursor-pointer ${
-                  location === item.href ? "text-primary" : "text-foreground"
+                className={`text-sm font-medium font-sans transition-colors hover:text-primary cursor-pointer ${
+                  location === item.href ? "text-primary font-semibold" : "text-foreground/80"
                 }`}
               >
                 {item.name}
               </span>
             </Link>
           ))}
-          <Button size="sm">Book Consultation</Button>
+          <Button size="sm" className="shadow-sm">Book Consultation</Button>
         </div>
 
         {/* Mobile Menu Button */}

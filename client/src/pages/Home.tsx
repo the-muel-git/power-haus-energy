@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-20 md:py-32">
+      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-24 md:py-36">
         <div className="container">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight">
               Save Money and Live Comfortably with a Smarter, Greener Home
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
+            <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
               Expert energy consultation and passive design advice tailored for Adelaide Hills homeowners. Reduce your energy bills while creating a more comfortable, sustainable home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -33,11 +33,11 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 md:py-24">
+      <section className="py-20 md:py-28">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Adelaide Hills Homeowners Choose Us</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Why Adelaide Hills Homeowners Choose Us</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               We understand the unique climate challenges of the Adelaide Hills and provide tailored solutions for your home.
             </p>
           </div>
@@ -48,7 +48,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <ThermometerSun className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle>Climate-Specific Expertise</CardTitle>
+                <CardTitle className="font-sans">Climate-Specific Expertise</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
@@ -62,7 +62,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Leaf className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle>Sustainable Solutions</CardTitle>
+                <CardTitle className="font-sans">Sustainable Solutions</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
@@ -76,7 +76,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <CheckCircle2 className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle>Proven Results</CardTitle>
+                <CardTitle className="font-sans">Proven Results</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>

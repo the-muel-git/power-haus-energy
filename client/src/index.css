@@ -119,10 +119,11 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Merriweather', serif;
+    font-family: 'Lora', serif;
+    font-weight: 400;
   }
-  h1, h2, h3, h4, h5, h6, button {
-    font-family: 'Montserrat', sans-serif;
+  h1, h2, h3, h4, h5, h6, button, .font-sans {
+    font-family: 'Inter', sans-serif;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
