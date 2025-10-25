@@ -156,7 +156,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
                       <p className="text-sm text-muted-foreground break-all">
-                        info@adelaidehillsenergy.com.au
+                        info@powerhausenergy.com.au
                       </p>
                       <p className="text-xs text-muted-foreground mt-1">We respond within 24 hours</p>
                     </div>
@@ -232,7 +232,7 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    We service the Adelaide Hills region and surrounding areas within approximately 50km of the Adelaide CBD, including Gawler, Mount Barker, Strathalbyn, and Sellicks Beach. Contact us if you're unsure whether we service your location.
+                    We service the Adelaide Hills region and surrounding areas, including Stirling, Mount Barker, Hahndorf, Lobethal, and nearby communities. Contact us if you're unsure whether we service your location.
                   </CardDescription>
                 </CardContent>
               </Card>

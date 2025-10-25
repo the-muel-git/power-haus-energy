@@ -24,7 +24,7 @@ export default function About() {
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Adelaide Hills Energy Consultation was founded with a simple mission: to help local homeowners reduce their energy costs while creating more comfortable living spaces. Having lived in the Adelaide Hills for over 20 years, we understand the unique challenges our climate presents.
+                  Power Haus Energy was founded with a simple mission: to help Adelaide Hills homeowners reduce their energy costs while creating more comfortable living spaces. Having lived and worked in the Adelaide Hills for over 20 years, we understand the unique challenges our climate presents.
                 </p>
                 <p>
                   From cold, windy winters to hot, dry summers, Adelaide Hills homes need smart design solutions that work with nature, not against it. That's where passive design principles come in—strategies that have been proven for centuries but are often overlooked in modern construction.
@@ -126,7 +126,7 @@ export default function About() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Proudly Serving the Adelaide Hills</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              We provide energy consultation services throughout the Adelaide Hills region, from Gawler to Mount Barker, Strathalbyn to Sellicks Beach. If you're within approximately 50km of the Adelaide CBD, we'd love to help you create a more comfortable, energy-efficient home.
+              We provide energy consultation services throughout the Adelaide Hills region, including Stirling, Mount Barker, Hahndorf, Lobethal, and surrounding communities. If you're in the Adelaide Hills or nearby areas, we'd love to help you create a more comfortable, energy-efficient home.
             </p>
             <div className="bg-secondary/20 rounded-lg p-8">
               <p className="text-muted-foreground">
