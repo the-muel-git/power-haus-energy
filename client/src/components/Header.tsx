@@ -21,11 +21,9 @@ export default function Header() {
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center gap-3 cursor-pointer">
-            <div className="w-11 h-11 bg-primary rounded-xl flex items-center justify-center shadow-sm">
-              <span className="text-primary-foreground font-bold text-lg">PH</span>
-            </div>
+            <img src="/logo-icon.png" alt="Power Haus Energy" className="w-12 h-12" />
             <div className="flex flex-col">
-              <span className="font-bold text-lg leading-tight tracking-tight">Power Haus Energy</span>
+              <span className="font-bold text-xl leading-tight tracking-tight text-primary">Power Haus Energy</span>
               <span className="text-xs text-muted-foreground leading-tight font-sans">Adelaide Hills Specialists</span>
             </div>
           </div>
