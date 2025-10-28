@@ -26,13 +26,21 @@ export default function Tips() {
                 The Adelaide Hills experiences a Mediterranean climate with distinct seasonal challenges. Winters are cold and windy (average July temperatures 5-13°C), while summers are hot and dry (average January temperatures 15-27°C). Understanding these patterns is key to effective energy management.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                <div className="bg-white rounded p-4">
+                <div 
+                  className="bg-white rounded p-4 cursor-pointer hover:shadow-md hover:bg-blue-50/50 transition-all" 
+                  onClick={() => document.getElementById('winter-tips')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                >
                   <h3 className="font-semibold mb-2">Winter (June-August)</h3>
-                  <p className="text-muted-foreground">Cold, windy, wettest months. Focus on retaining heat and preventing drafts.</p>
+                  <p className="text-muted-foreground mb-2">Cold, windy, wettest months. Focus on retaining heat and preventing drafts.</p>
+                  <p className="text-xs text-primary font-medium">View winter tips →</p>
                 </div>
-                <div className="bg-white rounded p-4">
+                <div 
+                  className="bg-white rounded p-4 cursor-pointer hover:shadow-md hover:bg-orange-50/50 transition-all" 
+                  onClick={() => document.getElementById('summer-tips')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                >
                   <h3 className="font-semibold mb-2">Summer (December-February)</h3>
-                  <p className="text-muted-foreground">Hot, dry, clear skies. Focus on blocking heat and maximizing natural cooling.</p>
+                  <p className="text-muted-foreground mb-2">Hot, dry, clear skies. Focus on blocking heat and maximizing natural cooling.</p>
+                  <p className="text-xs text-primary font-medium">View summer tips →</p>
                 </div>
               </div>
             </div>
@@ -41,7 +49,7 @@ export default function Tips() {
       </section>
 
       {/* Winter Tips */}
-      <section className="py-16 md:py-24 bg-secondary/20">
+      <section id="winter-tips" className="py-16 md:py-24 bg-secondary/20">
         <div className="container">
           <div className="text-center mb-12">
             <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -94,7 +102,7 @@ export default function Tips() {
       </section>
 
       {/* Summer Tips */}
-      <section className="py-16 md:py-24">
+      <section id="summer-tips" className="py-16 md:py-24">
         <div className="container">
           <div className="text-center mb-12">
             <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
