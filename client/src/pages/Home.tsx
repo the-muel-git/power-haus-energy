@@ -1,30 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Home as HomeIcon, Leaf, Sun, ThermometerSun, Wind } from "lucide-react";
+import { CheckCircle2, TrendingDown, Thermometer, Leaf } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-24 md:py-36">
+      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-32 md:py-48">
         <div className="container">
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight">
-              Save Money and Live Comfortably with a Smarter, Greener Home
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight tracking-tight">
+              Save Money.<br />Live Comfortably.
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
-              Expert energy consultation and passive design advice tailored for Adelaide Hills homeowners. Reduce your energy bills while creating a more comfortable, sustainable home.
+            <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
+              Expert energy consultation for Adelaide Hills homes. Reduce bills by 30-50% while improving year-round comfort.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button size="lg" className="w-full sm:w-auto">
+                <Button size="lg" className="text-base px-8 py-6 h-auto">
                   Book Free Consultation
                 </Button>
               </Link>
               <Link href="/services">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                  Our Services
+                <Button size="lg" variant="outline" className="text-base px-8 py-6 h-auto">
+                  View Services
                 </Button>
               </Link>
             </div>
@@ -32,209 +32,133 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-20 md:py-28">
+      {/* Value Props */}
+      <section className="py-24 md:py-32">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Why Adelaide Hills Homeowners Choose Us</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              We understand the unique climate challenges of the Adelaide Hills and provide tailored solutions for your home.
-            </p>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <TrendingDown className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3 font-sans">Lower Bills</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Typical savings of 30-50% on energy costs through proven passive design strategies
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card>
-              <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <ThermometerSun className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="font-sans">Climate-Specific Expertise</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Our solutions are designed specifically for Adelaide Hills' Mediterranean climate with cold winters and hot, dry summers.
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Thermometer className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3 font-sans">Better Comfort</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Maintain comfortable temperatures year-round without relying on heating and cooling
+              </p>
+            </div>
 
-            <Card>
-              <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Leaf className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="font-sans">Sustainable Solutions</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  We focus on passive design principles that work with nature, reducing your environmental footprint while saving money.
-                </CardDescription>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <CheckCircle2 className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="font-sans">Proven Results</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Our clients typically see 30-50% reduction in energy bills after implementing our recommendations.
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Leaf className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3 font-sans">Climate-Specific</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Solutions tailored for Adelaide Hills' Mediterranean climate and temperature extremes
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="py-16 md:py-24 bg-secondary/20">
+      {/* Services Highlight */}
+      <section className="py-24 md:py-32 bg-secondary/20">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive energy solutions for every stage of your home journey
-            </p>
-          </div>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">How We Help</h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Professional energy assessments and passive design advice
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="bg-white">
-              <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <HomeIcon className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle>Energy Audits & Consultations</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="mb-4">
-                  Professional home energy assessments that identify exactly where you're losing energy and money. Get a customized action plan with prioritized recommendations.
-                </CardDescription>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Comprehensive room-by-room assessment</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Thermal imaging and air leakage testing</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Detailed energy-saving report</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-white">
-              <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Sun className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle>Passive Design Advice</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="mb-4">
-                  Expert guidance on incorporating passive design principles into new builds or renovations. Work with nature to maintain comfortable temperatures year-round.
-                </CardDescription>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Optimal orientation and window placement</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Thermal mass and insulation strategies</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Natural ventilation and shading solutions</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-8">
-            <Link href="/services">
-              <Button size="lg" variant="outline">
-                View All Services
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Passive Design Principles */}
-      <section className="py-16 md:py-24">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Key Passive Design Principles</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Understanding how to work with Adelaide Hills' unique climate
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                icon: Sun,
-                title: "Solar Orientation",
-                description: "North-facing living areas capture winter sun while strategic eaves block harsh summer rays."
-              },
-              {
-                icon: Wind,
-                title: "Natural Ventilation",
-                description: "Capture morning and evening south-westerly breezes for natural cooling and air circulation."
-              },
-              {
-                icon: ThermometerSun,
-                title: "Thermal Mass",
-                description: "Materials like concrete and brick absorb heat during the day and release it at night."
-              },
-              {
-                icon: HomeIcon,
-                title: "Insulation",
-                description: "High-quality insulation in walls, floors, and ceilings prevents unwanted heat transfer."
-              },
-              {
-                icon: Leaf,
-                title: "Shading",
-                description: "Properly sized eaves, awnings, and plantings control solar gain throughout the year."
-              },
-              {
-                icon: CheckCircle2,
-                title: "Glazing",
-                description: "Double-glazed windows minimize heat loss in winter and heat gain in summer."
-              }
-            ].map((principle, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
-                    <principle.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <CardTitle className="text-lg">{principle.title}</CardTitle>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Card className="border-2">
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-2xl font-sans">Energy Audits</CardTitle>
+                  <CardDescription className="text-base">
+                    Identify exactly where you're losing energy and money
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>{principle.description}</CardDescription>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Thermal imaging and air leakage testing</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Detailed energy-saving report</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Prioritized recommendations with ROI</span>
+                    </li>
+                  </ul>
+                  <div className="mt-6 pt-6 border-t">
+                    <p className="text-sm font-medium text-primary">From $400</p>
+                  </div>
                 </CardContent>
               </Card>
-            ))}
+
+              <Card className="border-2">
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-2xl font-sans">Passive Design</CardTitle>
+                  <CardDescription className="text-base">
+                    Build efficiency into new homes and renovations
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Solar orientation and window placement</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Thermal mass and insulation strategies</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Natural ventilation and shading</span>
+                    </li>
+                  </ul>
+                  <div className="mt-6 pt-6 border-t">
+                    <p className="text-sm font-medium text-primary">From $800</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="text-center mt-12">
+              <Link href="/services">
+                <Button size="lg" variant="outline" className="text-base">
+                  View All Services
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+      <section className="py-24 md:py-32 bg-primary text-primary-foreground">
         <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Home?</h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Book a free consultation today and discover how much you could save on your energy bills.
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Ready to Get Started?</h2>
+          <p className="text-xl mb-10 max-w-2xl mx-auto opacity-95 leading-relaxed">
+            Book a free consultation and discover how much you could save
           </p>
           <Link href="/contact">
-            <Button size="lg" variant="secondary">
-              Get Started Today
+            <Button size="lg" variant="secondary" className="text-base px-8 py-6 h-auto shadow-lg">
+              Book Free Consultation
             </Button>
           </Link>
         </div>
