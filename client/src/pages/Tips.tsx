@@ -254,6 +254,61 @@ export default function Tips() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <section className="py-16 md:py-24 bg-secondary/20">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+            
+            <div className="space-y-4">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">How long does an energy audit take?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription>
+                    A typical residential energy audit takes 2-3 hours, depending on the size of your home. We'll schedule a time that's convenient for you.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">What should I prepare for an energy audit?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription>
+                    Have your recent energy bills available (we can help you access them if needed). Make a list of any comfort issues or areas of concern. Ensure we can access all areas of your home, including roof space if possible.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Do you service my area?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription>
+                    We service the Adelaide Hills region and surrounding areas, including Stirling, Mount Barker, Hahndorf, Lobethal, and nearby communities. Contact us if you're unsure whether we service your location.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">How much can I expect to save?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription>
+                    Savings vary depending on your home's current condition and which recommendations you implement. Our clients typically see 30-50% reduction in energy bills after implementing our recommendations. We'll provide specific estimates in your assessment report.
+                  </CardDescription>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
