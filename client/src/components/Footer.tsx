@@ -9,10 +9,10 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/logo-icon.png" alt="Power Haus Energy" className="w-12 h-12" />
+              <img src="/logo.png" alt="Power Haus" className="h-12 w-12" />
               <div className="flex flex-col">
-                <span className="font-bold text-lg leading-tight tracking-tight text-primary">Power Haus Energy</span>
-                <span className="text-xs text-muted-foreground leading-tight font-sans">Adelaide Hills Specialists</span>
+                <span className="text-xl font-bold text-primary leading-none tracking-tight">Power Haus</span>
+                <span className="text-xs font-medium text-muted-foreground leading-none mt-1">Energy Consultation</span>
               </div>
             </div>
             <p className="text-sm text-muted-foreground/80 mb-4 max-w-md leading-relaxed">
@@ -69,7 +69,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Power Haus Energy. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Power Haus. All rights reserved.</p>
         </div>
       </div>
     </footer>

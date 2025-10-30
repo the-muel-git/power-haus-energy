@@ -21,10 +21,10 @@ export default function Header() {
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center gap-3 cursor-pointer">
-            <img src="/logo-icon.png" alt="Power Haus Energy" className="w-12 h-12" />
+            <img src="/logo.png" alt="Power Haus" className="h-12 w-12" />
             <div className="flex flex-col">
-              <span className="font-bold text-xl leading-tight tracking-tight text-primary">Power Haus Energy</span>
-              <span className="text-xs text-muted-foreground leading-tight font-sans">Adelaide Hills Specialists</span>
+              <span className="text-2xl font-bold text-primary leading-none tracking-tight">Power Haus</span>
+              <span className="text-xs font-medium text-muted-foreground leading-none mt-1">Energy Consultation</span>
             </div>
           </div>
         </Link>
