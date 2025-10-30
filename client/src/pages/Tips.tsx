@@ -16,37 +16,6 @@ export default function Tips() {
         </div>
       </section>
 
-      {/* Climate Context */}
-      <section className="py-16 md:py-24">
-        <div className="container">
-          <div className="max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Understanding Adelaide Hills Climate</h2>
-            <div className="bg-secondary/20 rounded-lg p-6 space-y-4">
-              <p className="text-muted-foreground">
-                The Adelaide Hills experiences a Mediterranean climate with distinct seasonal challenges. Winters are cold and windy (average July temperatures 5-13°C), while summers are hot and dry (average January temperatures 15-27°C). Understanding these patterns is key to effective energy management.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                <div 
-                  className="bg-white rounded p-4 cursor-pointer hover:shadow-md hover:bg-blue-50/50 transition-all" 
-                  onClick={() => document.getElementById('winter-tips')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-                >
-                  <h3 className="font-semibold mb-2">Winter (June-August)</h3>
-                  <p className="text-muted-foreground mb-2">Cold, windy, wettest months. Focus on retaining heat and preventing drafts.</p>
-                  <p className="text-xs text-primary font-medium">View winter tips →</p>
-                </div>
-                <div 
-                  className="bg-white rounded p-4 cursor-pointer hover:shadow-md hover:bg-orange-50/50 transition-all" 
-                  onClick={() => document.getElementById('summer-tips')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-                >
-                  <h3 className="font-semibold mb-2">Summer (December-February)</h3>
-                  <p className="text-muted-foreground mb-2">Hot, dry, clear skies. Focus on blocking heat and maximizing natural cooling.</p>
-                  <p className="text-xs text-primary font-medium">View summer tips →</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Winter Tips */}
       <section id="winter-tips" className="py-16 md:py-24 bg-secondary/20">
