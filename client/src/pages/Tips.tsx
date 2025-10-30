@@ -16,7 +16,6 @@ export default function Tips() {
         </div>
       </section>
 
-
       {/* Winter Tips */}
       <section id="winter-tips" className="py-16 md:py-24 bg-secondary/20">
         <div className="container">
