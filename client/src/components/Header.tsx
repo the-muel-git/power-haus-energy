@@ -42,7 +42,9 @@ export default function Header() {
               </span>
             </Link>
           ))}
-          <Button size="sm" className="shadow-sm">Book Consultation</Button>
+          <Button size="sm" className="shadow-sm" asChild>
+            <Link href="/book-consultation">Book Consultation</Link>
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -71,7 +73,9 @@ export default function Header() {
                 </span>
               </Link>
             ))}
-            <Button size="sm" className="w-full">Book Consultation</Button>
+            <Button size="sm" className="w-full" asChild>
+              <Link href="/book-consultation">Book Consultation</Link>
+            </Button>
           </div>
         </div>
       )}
