@@ -184,45 +184,6 @@ export default function Tips() {
         </div>
       </section>
 
-      {/* Quick Wins */}
-      <section className="py-16 md:py-24">
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight text-center">Quick Wins: Free or Low-Cost Actions</h2>
-            <Card className="bg-accent/30">
-              <CardContent className="pt-6">
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-bold">✓</span>
-                    <span>Change thermostat settings (free, saves 10-15% immediately)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-bold">✓</span>
-                    <span>Open/close curtains strategically (free, reduces heating/cooling needs by 10-20%)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-bold">✓</span>
-                    <span>Seal obvious drafts with weather stripping ($20-50, saves $100-200/year)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-bold">✓</span>
-                    <span>Switch 10 bulbs to LED ($50-100, saves $100+/year)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-bold">✓</span>
-                    <span>Clean HVAC filters (free, improves efficiency by 5-15%)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary font-bold">✓</span>
-                    <span>Use fans instead of AC when possible (saves 98% of cooling energy)</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container">

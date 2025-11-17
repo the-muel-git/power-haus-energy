@@ -2,6 +2,7 @@
 
 ## Current Tasks
 
+- [x] Remove Quick Wins section from Energy Tips page
 - [x] Add social proof to Services page
 - [x] Remove specific prices from Services page
 - [x] Add FAQ accordion to home page
