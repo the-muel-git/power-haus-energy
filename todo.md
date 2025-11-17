@@ -2,6 +2,7 @@
 
 ## Current Tasks
 
+- [x] Add dynamic pricing calculator to Book Consultation page
 - [x] Create separate "Book Consultation" page
 - [x] Move consultation-specific content from Services page to Book Consultation page
 - [x] Update navigation to include Book Consultation link
