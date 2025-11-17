@@ -8,7 +8,7 @@ export default function Tips() {
       <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-16 md:py-24">
         <div className="container">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Energy Saving Tips</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">Energy Saving Tips</h1>
             <p className="text-lg md:text-xl text-muted-foreground">
               Practical advice for Adelaide Hills homeowners to reduce energy consumption, lower bills, and improve home comfort throughout the year.
             </p>
@@ -23,7 +23,7 @@ export default function Tips() {
             <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
               <Snowflake className="h-8 w-8 text-primary" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Winter Energy Saving Tips</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Winter Energy Saving Tips</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Keep warm and reduce heating costs during cold Adelaide Hills winters
             </p>
@@ -58,7 +58,7 @@ export default function Tips() {
             ].map((tip, index) => (
               <Card key={index}>
                 <CardHeader>
-                  <CardTitle className="text-lg">{tip.title}</CardTitle>
+                  <CardTitle className="text-lg font-sans">{tip.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>{tip.description}</CardDescription>
@@ -76,7 +76,7 @@ export default function Tips() {
             <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
               <Sun className="h-8 w-8 text-primary" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Summer Cooling Tips</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Summer Cooling Tips</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Stay cool and reduce cooling costs during hot Adelaide Hills summers
             </p>
@@ -111,7 +111,7 @@ export default function Tips() {
             ].map((tip, index) => (
               <Card key={index}>
                 <CardHeader>
-                  <CardTitle className="text-lg">{tip.title}</CardTitle>
+                  <CardTitle className="text-lg font-sans">{tip.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>{tip.description}</CardDescription>
@@ -129,7 +129,7 @@ export default function Tips() {
             <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
               <Zap className="h-8 w-8 text-primary" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Year-Round Energy Savers</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Year-Round Energy Savers</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Simple habits that reduce energy consumption all year long
             </p>
@@ -173,7 +173,7 @@ export default function Tips() {
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
                     <tip.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle className="text-lg">{tip.title}</CardTitle>
+                  <CardTitle className="text-lg font-sans">{tip.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>{tip.description}</CardDescription>
@@ -188,7 +188,7 @@ export default function Tips() {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Quick Wins: Free or Low-Cost Actions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight text-center">Quick Wins: Free or Low-Cost Actions</h2>
             <Card className="bg-accent/30">
               <CardContent className="pt-6">
                 <ul className="space-y-3">
@@ -227,12 +227,12 @@ export default function Tips() {
       <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight text-center">Frequently Asked Questions</h2>
             
             <div className="space-y-4">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">How long does an energy audit take?</CardTitle>
+                  <CardTitle className="text-lg font-sans">How long does an energy audit take?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
@@ -243,7 +243,7 @@ export default function Tips() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">What should I prepare for an energy audit?</CardTitle>
+                  <CardTitle className="text-lg font-sans">What should I prepare for an energy audit?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
@@ -254,7 +254,7 @@ export default function Tips() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Do you service my area?</CardTitle>
+                  <CardTitle className="text-lg font-sans">Do you service my area?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
@@ -265,7 +265,7 @@ export default function Tips() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">How much can I expect to save?</CardTitle>
+                  <CardTitle className="text-lg font-sans">How much can I expect to save?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
