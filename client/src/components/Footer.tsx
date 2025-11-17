@@ -1,3 +1,4 @@
+import { BUSINESS_INFO } from "@config/business";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "wouter";
 
@@ -9,10 +10,10 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/logo.png" alt="Power Haus" className="h-12 w-12" />
+              <img src={BUSINESS_INFO.logoPath} alt={BUSINESS_INFO.logoAlt} className="h-12 w-12" />
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-primary leading-none tracking-tight font-sans">Power Haus</span>
-                <span className="text-xs font-medium text-muted-foreground leading-none mt-1 font-sans">Energy Consultation</span>
+                <span className="text-xl font-bold text-primary leading-none tracking-tight font-sans">{BUSINESS_INFO.name}</span>
+                <span className="text-xs font-medium text-muted-foreground leading-none mt-1 font-sans">{BUSINESS_INFO.tagline}</span>
               </div>
             </div>
             <p className="text-sm text-muted-foreground/80 mb-4 max-w-md leading-relaxed">
@@ -53,15 +54,19 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <Phone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-muted-foreground font-sans">(08) 1234 5678</span>
+                <a href={BUSINESS_INFO.phoneHref} className="text-muted-foreground font-sans hover:text-primary transition-colors">
+                  {BUSINESS_INFO.phone}
+                </a>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-muted-foreground font-sans">info@powerhausenergy.com.au</span>
+                <a href={BUSINESS_INFO.emailHref} className="text-muted-foreground font-sans hover:text-primary transition-colors break-all">
+                  {BUSINESS_INFO.email}
+                </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-muted-foreground font-sans">Serving Adelaide Hills, SA</span>
+                <span className="text-muted-foreground font-sans">{BUSINESS_INFO.serviceArea}</span>
               </li>
             </ul>
           </div>
@@ -69,7 +74,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Power Haus. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} {BUSINESS_INFO.name}. All rights reserved.</p>
         </div>
       </div>
     </footer>

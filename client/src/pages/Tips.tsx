@@ -1,15 +1,17 @@
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Lightbulb, Snowflake, Sun, ThermometerSun, Wind, Zap } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Tips() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-16 md:py-24">
+      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-20 md:py-28">
         <div className="container">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">Energy Saving Tips</h1>
-            <p className="text-lg md:text-xl text-muted-foreground">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Practical advice for Adelaide Hills homeowners to reduce energy consumption, lower bills, and improve home comfort throughout the year.
             </p>
           </div>
@@ -20,7 +22,7 @@ export default function Tips() {
       <section id="winter-tips" className="py-16 md:py-24 bg-secondary/20">
         <div className="container">
           <div className="text-center mb-12">
-            <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
               <Snowflake className="h-8 w-8 text-primary" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Winter Energy Saving Tips</h2>
@@ -73,7 +75,7 @@ export default function Tips() {
       <section id="summer-tips" className="py-16 md:py-24">
         <div className="container">
           <div className="text-center mb-12">
-            <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
               <Sun className="h-8 w-8 text-primary" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Summer Cooling Tips</h2>
@@ -126,7 +128,7 @@ export default function Tips() {
       <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container">
           <div className="text-center mb-12">
-            <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
               <Zap className="h-8 w-8 text-primary" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Year-Round Energy Savers</h2>
@@ -170,7 +172,7 @@ export default function Tips() {
             ].map((tip, index) => (
               <Card key={index}>
                 <CardHeader>
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-2">
+                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
                     <tip.icon className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-lg font-sans">{tip.title}</CardTitle>
@@ -191,7 +193,7 @@ export default function Tips() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight text-center">Frequently Asked Questions</h2>
             
             <div className="space-y-4">
-              <Card>
+              <Card className="border-2">
                 <CardHeader>
                   <CardTitle className="text-lg font-sans">How long does an energy audit take?</CardTitle>
                 </CardHeader>
@@ -202,7 +204,7 @@ export default function Tips() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-2">
                 <CardHeader>
                   <CardTitle className="text-lg font-sans">What should I prepare for an energy audit?</CardTitle>
                 </CardHeader>
@@ -213,7 +215,7 @@ export default function Tips() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-2">
                 <CardHeader>
                   <CardTitle className="text-lg font-sans">Do you service my area?</CardTitle>
                 </CardHeader>
@@ -224,7 +226,7 @@ export default function Tips() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border-2">
                 <CardHeader>
                   <CardTitle className="text-lg font-sans">How much can I expect to save?</CardTitle>
                 </CardHeader>
@@ -236,6 +238,19 @@ export default function Tips() {
               </Card>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 md:py-28 bg-primary text-primary-foreground">
+        <div className="container text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Want Personalized Advice?</h2>
+          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-95">
+            Get a professional energy audit and receive customized recommendations for your home
+          </p>
+          <Button size="lg" variant="secondary" className="text-base px-8 py-6 h-auto shadow-lg" asChild>
+            <Link href="/book-consultation">Book Free Consultation</Link>
+          </Button>
         </div>
       </section>
     </div>

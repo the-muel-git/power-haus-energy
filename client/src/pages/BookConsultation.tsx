@@ -237,7 +237,7 @@ export default function BookConsultation() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">1</span>
@@ -251,7 +251,7 @@ export default function BookConsultation() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">2</span>
@@ -265,7 +265,7 @@ export default function BookConsultation() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">3</span>
@@ -279,7 +279,7 @@ export default function BookConsultation() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">4</span>

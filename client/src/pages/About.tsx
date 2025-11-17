@@ -1,5 +1,7 @@
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Award, Heart, Target } from "lucide-react";
+import { Link } from "wouter";
 
 export default function About() {
   return (
@@ -9,7 +11,7 @@ export default function About() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">About Power Haus</h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Helping Adelaide Hills homeowners create comfortable, energy-efficient homes that work with our unique climate.
             </p>
           </div>
@@ -122,6 +124,19 @@ export default function About() {
               </Card>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 md:py-28 bg-primary text-primary-foreground">
+        <div className="container text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Ready to Get Started?</h2>
+          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-95">
+            Let us help you create a more comfortable, energy-efficient home
+          </p>
+          <Button size="lg" variant="secondary" className="text-base px-8 py-6 h-auto shadow-lg" asChild>
+            <Link href="/book-consultation">Book Free Consultation</Link>
+          </Button>
         </div>
       </section>
     </div>

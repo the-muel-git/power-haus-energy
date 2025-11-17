@@ -40,7 +40,7 @@ export default function ROICalculator() {
         <div className="space-y-3">
           <div className="flex justify-between items-center">
             <Label className="text-base font-sans">Current Quarterly Energy Bill</Label>
-            <span className="text-lg font-bold text-primary">${currentBill}</span>
+            <span className="text-lg font-bold font-sans text-primary">${currentBill}</span>
           </div>
           <Slider
             value={[currentBill]}
@@ -57,7 +57,7 @@ export default function ROICalculator() {
         <div className="space-y-3">
           <div className="flex justify-between items-center">
             <Label className="text-base font-sans">Home Size (sqm)</Label>
-            <span className="text-lg font-bold text-primary">{homeSize} sqm</span>
+            <span className="text-lg font-bold font-sans text-primary">{homeSize} sqm</span>
           </div>
           <Slider
             value={[homeSize]}
@@ -74,7 +74,7 @@ export default function ROICalculator() {
         <div className="space-y-3">
           <div className="flex justify-between items-center">
             <Label className="text-base font-sans">Target Energy Reduction</Label>
-            <span className="text-lg font-bold text-primary">{improvementLevel}%</span>
+            <span className="text-lg font-bold font-sans text-primary">{improvementLevel}%</span>
           </div>
           <Slider
             value={[improvementLevel]}
@@ -102,7 +102,7 @@ export default function ROICalculator() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground font-sans">Annual Savings</p>
-                    <p className="text-2xl font-bold text-primary">${annualSavings.toLocaleString()}</p>
+                    <p className="text-2xl font-bold font-sans text-primary">${annualSavings.toLocaleString()}</p>
                     <p className="text-xs text-muted-foreground mt-1">${monthlySavings}/month</p>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function ROICalculator() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground font-sans">Estimated Investment</p>
-                    <p className="text-2xl font-bold">${estimatedInvestment.toLocaleString()}</p>
+                    <p className="text-2xl font-bold font-sans">${estimatedInvestment.toLocaleString()}</p>
                     <p className="text-xs text-muted-foreground mt-1">One-time cost</p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default function ROICalculator() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground font-sans">Payback Period</p>
-                    <p className="text-2xl font-bold">{paybackYears} years</p>
+                    <p className="text-2xl font-bold font-sans">{paybackYears} years</p>
                     <p className="text-xs text-muted-foreground mt-1">Break-even point</p>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export default function ROICalculator() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground font-sans">10-Year Net Savings</p>
-                    <p className="text-2xl font-bold text-primary">${netSavings.toLocaleString()}</p>
+                    <p className="text-2xl font-bold font-sans text-primary">${netSavings.toLocaleString()}</p>
                     <p className="text-xs text-muted-foreground mt-1">After investment</p>
                   </div>
                 </div>

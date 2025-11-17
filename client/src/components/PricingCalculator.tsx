@@ -77,7 +77,7 @@ export default function PricingCalculator() {
       <CardContent className="space-y-6 pt-6">
         {/* Service Type Selection */}
         <div className="space-y-3">
-          <Label className="text-base font-semibold">Service Type</Label>
+          <Label className="text-base font-semibold font-sans">Service Type</Label>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             <button
               onClick={() => setServiceType("audit")}
@@ -116,7 +116,7 @@ export default function PricingCalculator() {
 
         {/* Home Size Selection */}
         <div className="space-y-3">
-          <Label className="text-base font-semibold">Home Size</Label>
+          <Label className="text-base font-semibold font-sans">Home Size</Label>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {[
               { value: "small", label: "Small", desc: "< 150m²" },
@@ -142,7 +142,7 @@ export default function PricingCalculator() {
 
         {/* Complexity Level */}
         <div className="space-y-3">
-          <Label className="text-base font-semibold">Assessment Level</Label>
+          <Label className="text-base font-semibold font-sans">Assessment Level</Label>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {[
               { value: "basic", label: "Basic", desc: "Essential assessment" },
@@ -167,7 +167,7 @@ export default function PricingCalculator() {
 
         {/* Additional Services */}
         <div className="space-y-3">
-          <Label className="text-base font-semibold">Additional Services (Optional)</Label>
+          <Label className="text-base font-semibold font-sans">Additional Services (Optional)</Label>
           <div className="space-y-2">
             {[
               { value: "pre-purchase", label: "Pre-Purchase Assessment", price: 200 },
@@ -184,7 +184,7 @@ export default function PricingCalculator() {
                 }`}
               >
                 <span className="font-sans">{service.label}</span>
-                <span className="text-sm text-primary font-semibold">+${service.price}</span>
+                <span className="text-sm text-primary font-semibold font-sans">+${service.price}</span>
               </button>
             ))}
           </div>
@@ -193,12 +193,12 @@ export default function PricingCalculator() {
         {/* Price Display */}
         <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-6 border-2 border-primary/20">
           <div className="flex items-center justify-between mb-2">
-            <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
+            <p className="text-sm font-semibold font-sans text-muted-foreground uppercase tracking-wide">
               Estimated Investment
             </p>
           </div>
           <div className="flex items-baseline gap-2 mb-3">
-            <span className="text-4xl md:text-5xl font-bold text-primary">${estimatedPrice}</span>
+            <span className="text-4xl md:text-5xl font-bold font-sans text-primary">${estimatedPrice}</span>
             <span className="text-muted-foreground">AUD</span>
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed mb-4">

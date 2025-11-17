@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { BUSINESS_INFO } from "@config/business";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -33,11 +34,11 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-20 md:py-32">
+      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-20 md:py-28">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">Get in Touch</h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Ready to start saving energy and money? Book your free consultation today.
             </p>
           </div>
@@ -45,7 +46,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-20 md:py-32">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
             {/* Contact Form */}
@@ -144,8 +145,10 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1 font-sans">Phone</h3>
-                      <p className="text-sm text-muted-foreground">(08) 1234 5678</p>
-                      <p className="text-xs text-muted-foreground mt-1">Mon-Fri: 9am-5pm</p>
+                      <a href={BUSINESS_INFO.phoneHref} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                        {BUSINESS_INFO.phone}
+                      </a>
+                      <p className="text-xs text-muted-foreground mt-1">{BUSINESS_INFO.hours}</p>
                     </div>
                   </div>
 
@@ -155,10 +158,10 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1 font-sans">Email</h3>
-                      <p className="text-sm text-muted-foreground break-all">
-                        info@powerhausenergy.com.au
-                      </p>
-                      <p className="text-xs text-muted-foreground mt-1">24 hour response time</p>
+                      <a href={BUSINESS_INFO.emailHref} className="text-sm text-muted-foreground hover:text-primary transition-colors break-all">
+                        {BUSINESS_INFO.email}
+                      </a>
+                      <p className="text-xs text-muted-foreground mt-1">{BUSINESS_INFO.responseTime}</p>
                     </div>
                   </div>
 
@@ -169,10 +172,10 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold mb-1 font-sans">Service Area</h3>
                       <p className="text-sm text-muted-foreground">
-                        Adelaide Hills, SA
+                        {BUSINESS_INFO.location}
                       </p>
                       <p className="text-xs text-muted-foreground mt-1">
-                        50km radius from Adelaide CBD
+                        {BUSINESS_INFO.serviceRadius}
                       </p>
                     </div>
                   </div>

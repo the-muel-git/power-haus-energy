@@ -25,7 +25,7 @@ export default function Services() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">Our Services</h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Comprehensive energy solutions designed specifically for Adelaide Hills homes
             </p>
           </div>
@@ -167,7 +167,7 @@ export default function Services() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <TrendingDown className="h-6 w-6 text-primary" />
@@ -181,7 +181,7 @@ export default function Services() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Thermometer className="h-6 w-6 text-primary" />
@@ -195,7 +195,7 @@ export default function Services() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Shield className="h-6 w-6 text-primary" />
@@ -209,7 +209,7 @@ export default function Services() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Lightbulb className="h-6 w-6 text-primary" />
@@ -223,7 +223,7 @@ export default function Services() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Wind className="h-6 w-6 text-primary" />
@@ -237,7 +237,7 @@ export default function Services() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Home className="h-6 w-6 text-primary" />
@@ -265,7 +265,7 @@ export default function Services() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <ClipboardList className="h-6 w-6 text-primary" />
@@ -293,7 +293,7 @@ export default function Services() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <CheckCircle2 className="h-6 w-6 text-primary" />
@@ -321,7 +321,7 @@ export default function Services() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Clock className="h-6 w-6 text-primary" />
