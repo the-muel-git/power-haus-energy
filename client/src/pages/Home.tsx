@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle2, TrendingDown, Thermometer, Leaf } from "lucide-react";
 import { Link } from "wouter";
 
@@ -145,6 +146,67 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Common Questions</h2>
+              <p className="text-lg text-muted-foreground">
+                Everything you need to know about energy audits and passive design
+              </p>
+            </div>
+
+            <Accordion type="single" collapsible className="space-y-3">
+              <AccordionItem value="item-1" className="border rounded-lg px-6">
+                <AccordionTrigger className="font-sans font-semibold hover:no-underline">
+                  What is an energy audit and what does it include?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  An energy audit is a comprehensive assessment of your home's energy performance. We use thermal imaging to identify heat loss, conduct air leakage testing to find drafts, and review your appliances and systems. You'll receive a detailed report with prioritised recommendations and estimated costs and savings for each improvement.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="border rounded-lg px-6">
+                <AccordionTrigger className="font-sans font-semibold hover:no-underline">
+                  How much can I realistically save on my energy bills?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  Most Adelaide Hills homeowners see savings of 30–50% after implementing our recommendations. The exact amount depends on your current home's condition and which improvements you choose to implement. Simple fixes like sealing air leaks can save 10–15%, while comprehensive upgrades including insulation and passive design features can achieve 40–50% reductions.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="border rounded-lg px-6">
+                <AccordionTrigger className="font-sans font-semibold hover:no-underline">
+                  What is passive design and is it only for new homes?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  Passive design uses your home's orientation, materials, and layout to naturally regulate temperature without relying on heating and cooling systems. While it's easiest to incorporate in new builds, many passive design principles can be applied to existing homes through renovations—such as adding thermal mass, improving insulation, installing appropriate shading, and optimising natural ventilation.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="border rounded-lg px-6">
+                <AccordionTrigger className="font-sans font-semibold hover:no-underline">
+                  How long does an energy audit take?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  A typical residential energy audit takes 2–3 hours on-site. This includes thermal imaging, air leakage testing, and a thorough inspection of your home's envelope, insulation, windows, and systems. You'll receive your detailed report with recommendations within 5–7 business days.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="border rounded-lg px-6">
+                <AccordionTrigger className="font-sans font-semibold hover:no-underline">
+                  Do you offer rebates or financing options?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  While we don't directly offer financing, we can guide you through available South Australian government rebates and incentive programs for energy efficiency upgrades. We'll identify which improvements qualify for rebates and provide all the documentation you need for your applications. Many improvements pay for themselves within 2–5 years through energy savings.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
