@@ -2,6 +2,7 @@
 
 ## Current Tasks
 
+- [x] Review and update fonts to more professional, minimalist combination
 - [x] Remove Quick Wins section from Energy Tips page
 - [x] Add social proof to Services page
 - [x] Remove specific prices from Services page
