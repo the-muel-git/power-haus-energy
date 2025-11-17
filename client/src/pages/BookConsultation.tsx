@@ -9,7 +9,7 @@ import {
   FileText
 } from "lucide-react";
 import { Link } from "wouter";
-import PricingCalculator from "@/components/PricingCalculator";
+import ROICalculator from "@/components/ROICalculator";
 
 export default function BookConsultation() {
   return (
@@ -31,12 +31,12 @@ export default function BookConsultation() {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Calculate Your Investment</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Calculate Your Potential Savings</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Use our interactive calculator to get an instant estimate based on your specific needs
+                See how much you could save with energy efficiency improvements
               </p>
             </div>
-            <PricingCalculator />
+            <ROICalculator />
           </div>
         </div>
       </section>

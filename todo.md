@@ -2,6 +2,7 @@
 
 ## Current Tasks
 
+- [x] Replace pricing calculator with energy savings ROI calculator
 - [x] Review and update fonts to more professional, minimalist combination
 - [x] Remove Quick Wins section from Energy Tips page
 - [x] Add social proof to Services page
