@@ -2,6 +2,8 @@
 
 ## Current Tasks
 
+- [x] Add social proof to Services page
+- [x] Remove specific prices from Services page
 - [x] Add FAQ accordion to home page
 - [x] Ensure consistent font in logo, header, menu bars, and settings
 - [x] Refine and consolidate text content to avoid walls of text
