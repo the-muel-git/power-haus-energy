@@ -60,7 +60,7 @@ export default function Services() {
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Detailed report with prioritized recommendations</span>
+                    <span className="text-sm text-muted-foreground">Detailed report with prioritised recommendations</span>
                   </div>
                 </div>
 
@@ -194,7 +194,7 @@ export default function Services() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="leading-relaxed">
-                  Stop guessing about which improvements will have the biggest impact. Our prioritized recommendations show you exactly where to invest for maximum return.
+                  Stop guessing about which improvements will have the biggest impact. Our prioritised recommendations show you exactly where to invest for maximum return.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -306,7 +306,7 @@ export default function Services() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="leading-relaxed mb-4">
-                  Track your home's energy performance over time and receive annual check-ins to optimize efficiency as conditions change.
+                  Track your home's energy performance over time and receive annual check-ins to optimise efficiency as conditions change.
                 </CardDescription>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">

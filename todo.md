@@ -2,6 +2,9 @@
 
 ## Current Tasks
 
+- [x] Refine and consolidate text content to avoid walls of text
+- [x] Ensure Australian English spelling and grammar throughout
+- [x] Clean up whitespace and overall UI
 - [x] Perform code review for style and formatting consistency
 
 - [x] Review and ensure consistent typography across all pages

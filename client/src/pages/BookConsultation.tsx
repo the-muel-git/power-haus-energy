@@ -274,7 +274,7 @@ export default function BookConsultation() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-center leading-relaxed">
-                  Get a detailed report with prioritized recommendations, cost estimates, and projected savings.
+                  Get a detailed report with prioritised recommendations, cost estimates, and projected savings.
                 </CardDescription>
               </CardContent>
             </Card>
