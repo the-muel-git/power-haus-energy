@@ -27,7 +27,7 @@ export default function BookConsultation() {
       </section>
 
       {/* Pricing Calculator */}
-      <section className="py-20 md:py-28 bg-secondary/20">
+      <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -42,7 +42,7 @@ export default function BookConsultation() {
       </section>
 
       {/* Consultation Options */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Energy Audit */}
@@ -226,8 +226,8 @@ export default function BookConsultation() {
         </div>
       </section>
 
-      {/* Process */}
-      <section className="py-20 md:py-28 bg-secondary/20">
+      {/* How It Works */}
+      <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">How It Works</h2>

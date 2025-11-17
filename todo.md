@@ -2,6 +2,8 @@
 
 ## Current Tasks
 
+- [x] Perform code review for style and formatting consistency
+
 - [x] Review and ensure consistent typography across all pages
 - [x] Verify proper heading hierarchy (h1, h2, h3)
 - [x] Standardize formatting and spacing

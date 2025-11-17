@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-20 md:py-32">
+      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-20 md:py-28">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">About Power Haus Energy</h1>
@@ -17,7 +17,7 @@ export default function About() {
       </section>
 
       {/* Our Story */}
-      <section className="py-24 md:py-32">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -68,7 +68,7 @@ export default function About() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 md:py-32 bg-secondary/20">
+      <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">

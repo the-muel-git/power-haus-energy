@@ -30,7 +30,7 @@ export default function Services() {
       </section>
 
       {/* Main Services Overview */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 max-w-6xl mx-auto">
             {/* Energy Audits */}
@@ -39,7 +39,7 @@ export default function Services() {
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                   <Home className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight">Energy Audits</CardTitle>
+                <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight font-sans">Energy Audits</CardTitle>
                 <CardDescription className="text-base leading-relaxed">
                   Comprehensive assessment of your existing home's energy performance with actionable recommendations.
                 </CardDescription>
@@ -87,7 +87,7 @@ export default function Services() {
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                   <Sun className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight">Passive Design</CardTitle>
+                <CardTitle className="text-2xl md:text-3xl font-bold tracking-tight font-sans">Passive Design</CardTitle>
                 <CardDescription className="text-base leading-relaxed">
                   Expert guidance for new builds and major renovations to incorporate energy-efficient design from the start.
                 </CardDescription>
@@ -133,7 +133,7 @@ export default function Services() {
       </section>
 
       {/* Why It Matters */}
-      <section className="py-20 md:py-28 bg-secondary/20">
+      <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Why Professional Energy Assessment Matters</h2>
@@ -231,7 +231,7 @@ export default function Services() {
       </section>
 
       {/* Additional Services */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Additional Services</h2>
