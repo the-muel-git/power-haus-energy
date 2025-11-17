@@ -23,8 +23,8 @@ export default function Header() {
           <div className="flex items-center gap-3 cursor-pointer">
             <img src="/logo.png" alt="Power Haus" className="h-12 w-12" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-primary leading-none tracking-tight">Power Haus</span>
-              <span className="text-xs font-medium text-muted-foreground leading-none mt-1">Energy Consultation</span>
+              <span className="text-2xl font-bold text-primary leading-none tracking-tight font-sans">Power Haus</span>
+              <span className="text-xs font-medium text-muted-foreground leading-none mt-1 font-sans">Energy Consultation</span>
             </div>
           </div>
         </Link>
@@ -64,7 +64,7 @@ export default function Header() {
             {navigation.map((item) => (
               <Link key={item.name} href={item.href}>
                 <span
-                  className={`text-sm font-medium block py-2 cursor-pointer ${
+                  className={`text-sm font-medium font-sans block py-2 cursor-pointer ${
                     location === item.href ? "text-primary" : "text-foreground"
                   }`}
                   onClick={() => setMobileMenuOpen(false)}

@@ -2,6 +2,7 @@
 
 ## Current Tasks
 
+- [x] Ensure consistent font in logo, header, menu bars, and settings
 - [x] Refine and consolidate text content to avoid walls of text
 - [x] Ensure Australian English spelling and grammar throughout
 - [x] Clean up whitespace and overall UI
