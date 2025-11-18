@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { BUSINESS_INFO, NAVIGATION_LINKS } from "@config/business";
+import { BUSINESS_INFO, NAVIGATION_LINKS } from "@config";
 import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "wouter";

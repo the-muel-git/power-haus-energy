@@ -1,4 +1,4 @@
-import { BUSINESS_INFO } from "@config/business";
+import { BUSINESS_INFO } from "@config";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "wouter";
 

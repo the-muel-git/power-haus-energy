@@ -9,7 +9,7 @@ import {
   FileText
 } from "lucide-react";
 import { Link } from "wouter";
-import ROICalculator from "@/components/ROICalculator";
+import ROICalculator from "@/components/features/ROICalculator";
 
 export default function BookConsultation() {
   return (
