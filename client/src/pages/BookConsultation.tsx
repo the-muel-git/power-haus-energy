@@ -107,10 +107,6 @@ export default function BookConsultation() {
                   <FileText className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-muted-foreground">Report delivered within 5 business days</span>
                 </div>
-                <div className="bg-primary/5 rounded-xl p-6 border-2 border-primary/20">
-                  <p className="text-2xl font-bold text-primary mb-2">From $400</p>
-                  <p className="text-sm text-muted-foreground">Investment varies by home size and complexity</p>
-                </div>
               </div>
 
               <Button size="lg" className="w-full" asChild>
@@ -195,10 +191,6 @@ export default function BookConsultation() {
                 <div className="flex items-center gap-3 text-sm">
                   <FileText className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-muted-foreground">Detailed specifications and design recommendations</span>
-                </div>
-                <div className="bg-primary/5 rounded-xl p-6 border-2 border-primary/20">
-                  <p className="text-2xl font-bold text-primary mb-2">From $800</p>
-                  <p className="text-sm text-muted-foreground">Investment varies by project scope and complexity</p>
                 </div>
               </div>
 
