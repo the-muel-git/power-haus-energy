@@ -1,0 +1,54 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Development
+.git
+.gitignore
+
+# Server files (not needed for static Vercel deployment)
+server
+
+# Documentation
+docs
+*.md
+!README.md
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/index.js
+dist/server
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage
+*.test.*
+*.spec.*
+__tests__
+tests
+
+# Misc
+TODO.md
+CHANGELOG.md
+
