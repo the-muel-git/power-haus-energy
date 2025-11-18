@@ -54,8 +54,8 @@ export default function Contact() {
             <div className="lg:col-span-2">
               <Card className="border-2">
                 <CardHeader>
-                  <CardTitle className="text-base font-sans">Send Us a Message</CardTitle>
-                  <CardDescription className="text-sm">
+                  <CardTitle className="text-lg font-sans">Send Us a Message</CardTitle>
+                  <CardDescription>
                     We'll respond within 24 hours
                   </CardDescription>
                 </CardHeader>
@@ -134,7 +134,7 @@ export default function Contact() {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full md:w-auto px-8 h-12">
+                    <Button type="submit" size="lg" className="w-full md:w-auto px-8 h-11">
                       Send Message
                     </Button>
                   </form>
@@ -146,7 +146,7 @@ export default function Contact() {
             <div className="space-y-6">
               <Card className="border-2">
                 <CardHeader>
-                  <CardTitle className="text-base font-sans">Contact Details</CardTitle>
+                  <CardTitle className="text-lg font-sans">Contact Details</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -154,11 +154,11 @@ export default function Contact() {
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold mb-1 font-sans">Phone</h3>
+                      <h3 className="text-base font-semibold mb-1 font-sans">Phone</h3>
                       <a href={BUSINESS_INFO.phoneHref} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                         {BUSINESS_INFO.phone}
                       </a>
-                      <p className="text-xs text-muted-foreground mt-1">{BUSINESS_INFO.hours}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{BUSINESS_INFO.hours}</p>
                     </div>
                   </div>
 
@@ -167,11 +167,11 @@ export default function Contact() {
                       <Mail className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold mb-1 font-sans">Email</h3>
+                      <h3 className="text-base font-semibold mb-1 font-sans">Email</h3>
                       <a href={BUSINESS_INFO.emailHref} className="text-sm text-muted-foreground hover:text-primary transition-colors break-all">
                         {BUSINESS_INFO.email}
                       </a>
-                      <p className="text-xs text-muted-foreground mt-1">{BUSINESS_INFO.responseTime}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{BUSINESS_INFO.responseTime}</p>
                     </div>
                   </div>
 
@@ -180,11 +180,11 @@ export default function Contact() {
                       <MapPin className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold mb-1 font-sans">Service Area</h3>
+                      <h3 className="text-base font-semibold mb-1 font-sans">Service Area</h3>
                       <p className="text-sm text-muted-foreground">
                         {BUSINESS_INFO.location}
                       </p>
-                      <p className="text-xs text-muted-foreground mt-1">
+                      <p className="text-sm text-muted-foreground mt-1">
                         {BUSINESS_INFO.serviceRadius}
                       </p>
                     </div>
@@ -194,10 +194,10 @@ export default function Contact() {
 
               <Card className="bg-primary text-primary-foreground border-2 border-primary">
                 <CardHeader>
-                  <CardTitle className="text-base font-sans">Free Consultation</CardTitle>
+                  <CardTitle className="text-lg font-sans">Free Consultation</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-xs opacity-95 leading-relaxed">
+                  <p className="text-sm opacity-95 leading-relaxed">
                     Free 30-minute consultation. No obligation, just expert advice.
                   </p>
                 </CardContent>
@@ -218,9 +218,9 @@ export default function Contact() {
               </p>
             </div>
 
-            <Accordion type="single" collapsible className="space-y-2.5">
+            <Accordion type="single" collapsible className="space-y-3">
               <AccordionItem value="item-1" className="border-2 rounded-lg px-6 bg-background/80 backdrop-blur-sm">
-                <AccordionTrigger className="text-sm font-sans font-semibold hover:no-underline">
+                <AccordionTrigger className="text-base font-sans font-semibold hover:no-underline">
                   What is an energy audit?
                 </AccordionTrigger>
                 <AccordionContent className="text-sm text-muted-foreground">
@@ -229,7 +229,7 @@ export default function Contact() {
               </AccordionItem>
 
               <AccordionItem value="item-2" className="border-2 rounded-lg px-6 bg-background/80 backdrop-blur-sm">
-                <AccordionTrigger className="text-sm font-sans font-semibold hover:no-underline">
+                <AccordionTrigger className="text-base font-sans font-semibold hover:no-underline">
                   How much can I save on energy bills?
                 </AccordionTrigger>
                 <AccordionContent className="text-sm text-muted-foreground">
@@ -238,7 +238,7 @@ export default function Contact() {
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border-2 rounded-lg px-6 bg-background/80 backdrop-blur-sm">
-                <AccordionTrigger className="text-sm font-sans font-semibold hover:no-underline">
+                <AccordionTrigger className="text-base font-sans font-semibold hover:no-underline">
                   Is passive design only for new homes?
                 </AccordionTrigger>
                 <AccordionContent className="text-sm text-muted-foreground">
@@ -247,7 +247,7 @@ export default function Contact() {
               </AccordionItem>
 
               <AccordionItem value="item-4" className="border-2 rounded-lg px-6 bg-background/80 backdrop-blur-sm">
-                <AccordionTrigger className="text-sm font-sans font-semibold hover:no-underline">
+                <AccordionTrigger className="text-base font-sans font-semibold hover:no-underline">
                   How long does an audit take?
                 </AccordionTrigger>
                 <AccordionContent className="text-sm text-muted-foreground">
@@ -256,7 +256,7 @@ export default function Contact() {
               </AccordionItem>
 
               <AccordionItem value="item-5" className="border-2 rounded-lg px-6 bg-background/80 backdrop-blur-sm">
-                <AccordionTrigger className="text-sm font-sans font-semibold hover:no-underline">
+                <AccordionTrigger className="text-base font-sans font-semibold hover:no-underline">
                   Are rebates available?
                 </AccordionTrigger>
                 <AccordionContent className="text-sm text-muted-foreground">
