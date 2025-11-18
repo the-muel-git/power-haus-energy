@@ -38,7 +38,7 @@ export default function Contact() {
       <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">Get in Touch</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Get in Touch</h1>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Book your free consultation today.
             </p>
@@ -54,7 +54,7 @@ export default function Contact() {
             <div className="lg:col-span-2">
               <Card className="border-2">
                 <CardHeader>
-                  <CardTitle className="text-lg font-sans">Send Us a Message</CardTitle>
+                  <CardTitle className="text-base font-sans">Send Us a Message</CardTitle>
                   <CardDescription className="text-sm">
                     We'll respond within 24 hours
                   </CardDescription>

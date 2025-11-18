@@ -17,7 +17,7 @@ export default function BookConsultation() {
       <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">Book Your Consultation</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Book Your Consultation</h1>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
               Choose the right consultation for your home.
             </p>
@@ -35,7 +35,7 @@ export default function BookConsultation() {
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
                   <Home className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Energy Audit</h2>
+                <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Energy Audit</h2>
                 <p className="text-base text-muted-foreground leading-relaxed">
                   Comprehensive assessment with actionable recommendations.
                 </p>
@@ -120,7 +120,7 @@ export default function BookConsultation() {
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
                   <Sun className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Passive Design Consultation</h2>
+                <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Passive Design Consultation</h2>
                 <p className="text-base text-muted-foreground leading-relaxed">
                   Energy-efficient design for new builds and renovations.
                 </p>
@@ -276,7 +276,7 @@ export default function BookConsultation() {
       <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
+            <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
             <p className="text-sm md:text-base mb-6 opacity-90">
               Book your consultation to discover your savings.
             </p>

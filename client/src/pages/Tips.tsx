@@ -11,7 +11,7 @@ export default function Tips() {
       <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">Energy Saving Tips</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Energy Saving Tips</h1>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Reduce consumption, lower bills, improve comfort.
             </p>
@@ -120,7 +120,7 @@ export default function Tips() {
       {/* CTA Section */}
       <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
           <p className="text-sm md:text-base mb-6 max-w-2xl mx-auto opacity-95">
             Book a free consultation to discover your savings
           </p>

@@ -10,7 +10,7 @@ export default function About() {
       <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">Our Story</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Our Story</h1>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
               Combining passive design with modern energy assessment to help Adelaide Hills homeowners reduce costs and improve comfort.
             </p>
@@ -31,7 +31,7 @@ export default function About() {
                   <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                     <Target className="h-7 w-7 text-primary" />
                   </div>
-                  <CardTitle className="text-lg font-sans">Our Mission</CardTitle>
+                  <CardTitle className="text-base font-sans">Our Mission</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm leading-relaxed">
@@ -45,7 +45,7 @@ export default function About() {
                   <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                     <Heart className="h-7 w-7 text-primary" />
                   </div>
-                  <CardTitle className="text-lg font-sans">Our Values</CardTitle>
+                  <CardTitle className="text-base font-sans">Our Values</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm leading-relaxed">
@@ -119,7 +119,7 @@ export default function About() {
       {/* CTA Section */}
       <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
+          <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
           <p className="text-sm md:text-base mb-6 max-w-2xl mx-auto opacity-95">
             Create a more comfortable, energy-efficient home
           </p>

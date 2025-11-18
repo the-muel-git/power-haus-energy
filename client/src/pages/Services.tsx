@@ -24,7 +24,7 @@ export default function Services() {
       <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">Our Services</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Our Services</h1>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Energy solutions for Adelaide Hills homes
             </p>
@@ -77,7 +77,7 @@ export default function Services() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <TrendingDown className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="font-sans">Reduce Energy Bills</CardTitle>
+                <CardTitle className="text-base font-sans">Reduce Energy Bills</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
@@ -261,7 +261,7 @@ export default function Services() {
       <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
+            <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
             <p className="text-sm md:text-base mb-6 opacity-90">
               Book a consultation to discover your savings
             </p>
