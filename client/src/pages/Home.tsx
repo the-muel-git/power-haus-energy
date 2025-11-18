@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, TrendingDown, Thermometer, Leaf } from "lucide-react";
+import { CheckCircle2, TrendingDown, Thermometer, Leaf, Calculator, ArrowRight, Star, Users, Zap } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Home() {
@@ -156,33 +156,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Large CTA Section */}
-      <section className="py-10 md:py-14 bg-gradient-to-br from-accent/5 via-background to-secondary/10">
+      {/* ROI Calculator Focal Point */}
+      <section className="py-10 md:py-14 bg-gradient-to-br from-primary/5 via-accent/10 to-secondary/20">
         <div className="container">
           <div className="max-w-5xl mx-auto">
-            <Card className="border-2 shadow-2xl bg-gradient-to-br from-background via-background to-primary/5 overflow-hidden">
-              <CardContent className="p-8 md:p-10 text-center">
-                <div className="max-w-3xl mx-auto space-y-4">
+            <Card className="border-2 shadow-2xl bg-gradient-to-br from-background via-background to-primary/5 overflow-hidden hover:shadow-3xl transition-shadow">
+              <CardContent className="p-8 md:p-10">
+                <div className="max-w-3xl mx-auto text-center space-y-4">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl mb-2">
+                    <Calculator className="h-8 w-8 text-primary" />
+                  </div>
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight">
-                    Start Saving Today
+                    Calculate Your Potential Savings
                   </h2>
                   <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    Book a free consultation to discover how much you could save on energy bills.
+                    Use our ROI calculator to see exactly how much you could save on energy bills with professional improvements.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
-                    <Link href="/book-consultation">
-                      <Button size="lg" className="text-lg px-10 py-7 h-auto shadow-xl hover:shadow-2xl hover:scale-105 transition-all">
-                        Book Free Consultation
-                      </Button>
-                    </Link>
-                    <Link href="/contact">
-                      <Button size="lg" variant="outline" className="text-lg px-10 py-7 h-auto border-2">
-                        Contact Us
-                      </Button>
-                    </Link>
+                  <div className="grid grid-cols-3 gap-4 py-4 max-w-2xl mx-auto">
+                    <div className="text-center">
+                      <div className="text-2xl md:text-3xl font-bold text-primary">30–50%</div>
+                      <div className="text-xs text-muted-foreground mt-1">Average Savings</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl md:text-3xl font-bold text-primary">2–5 yrs</div>
+                      <div className="text-xs text-muted-foreground mt-1">Payback Period</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl md:text-3xl font-bold text-primary">$1000+</div>
+                      <div className="text-xs text-muted-foreground mt-1">Annual Savings</div>
+                    </div>
                   </div>
-                  <p className="text-sm text-muted-foreground pt-2">
-                    No obligation • Expert advice • 30-minute consultation
+                  <Link href="/tips#calculator">
+                    <Button size="lg" className="text-lg px-10 py-7 h-auto shadow-xl hover:shadow-2xl hover:scale-105 transition-all group">
+                      Try ROI Calculator
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
+                  <p className="text-xs text-muted-foreground pt-2">
+                    Free tool • No signup required • Instant results
                   </p>
                 </div>
               </CardContent>
@@ -191,17 +202,60 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ROI Calculator CTA */}
+      {/* Social Proof */}
+      <section className="py-10 md:py-14">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Trusted by Adelaide Hills Homeowners</h2>
+              <p className="text-sm md:text-base text-muted-foreground">
+                Join the growing number of homes saving energy and money
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card className="text-center border-2 hover:border-primary/30 transition-colors">
+                <CardHeader className="pb-4">
+                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
+                    <Users className="h-7 w-7 text-primary" />
+                  </div>
+                  <CardTitle className="text-3xl font-bold text-primary">50+</CardTitle>
+                  <CardDescription className="text-sm">Homes Assessed</CardDescription>
+                </CardHeader>
+              </Card>
+              <Card className="text-center border-2 hover:border-primary/30 transition-colors">
+                <CardHeader className="pb-4">
+                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
+                    <TrendingDown className="h-7 w-7 text-primary" />
+                  </div>
+                  <CardTitle className="text-3xl font-bold text-primary">35%</CardTitle>
+                  <CardDescription className="text-sm">Average Bill Reduction</CardDescription>
+                </CardHeader>
+              </Card>
+              <Card className="text-center border-2 hover:border-primary/30 transition-colors">
+                <CardHeader className="pb-4">
+                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
+                    <Star className="h-7 w-7 text-primary" />
+                  </div>
+                  <CardTitle className="text-3xl font-bold text-primary">4.9/5</CardTitle>
+                  <CardDescription className="text-sm">Client Satisfaction</CardDescription>
+                </CardHeader>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
       <section className="relative py-12 md:py-16 bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]"></div>
         <div className="container text-center relative">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Calculate Your Savings</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
           <p className="text-sm md:text-base mb-6 max-w-2xl mx-auto opacity-95">
-            See how much you could save with energy-efficient improvements
+            Book a free consultation to discover your savings
           </p>
-          <Link href="/tips#calculator">
+          <Link href="/book-consultation">
             <Button size="lg" variant="secondary" className="text-base px-8 py-6 h-auto shadow-2xl hover:shadow-xl hover:scale-105 transition-all">
-              Try ROI Calculator
+              Book Free Consultation
             </Button>
           </Link>
         </div>
