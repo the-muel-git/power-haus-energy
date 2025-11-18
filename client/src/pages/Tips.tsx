@@ -8,10 +8,10 @@ export default function Tips() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-20 md:py-28">
+      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">Energy Saving Tips</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">Energy Saving Tips</h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Practical advice for Adelaide Hills homeowners to reduce energy consumption, lower bills, and improve home comfort throughout the year.
             </p>
@@ -20,10 +20,10 @@ export default function Tips() {
       </section>
 
       {/* Savings Calculator */}
-      <section className="py-16 md:py-24 bg-secondary/20">
+      <section className="py-10 md:py-14 bg-secondary/20">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Calculate Your Potential Savings</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 See how much you could save with energy efficiency improvements
@@ -35,19 +35,19 @@ export default function Tips() {
       </section>
 
       {/* Winter Tips */}
-      <section id="winter-tips" className="py-16 md:py-24">
+      <section id="winter-tips" className="py-10 md:py-14">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
               <Snowflake className="h-8 w-8 text-primary" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Winter Energy Saving Tips</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Winter Energy Saving Tips</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Keep warm and reduce heating costs during cold Adelaide Hills winters
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               {
                 title: "Seal Drafts and Air Leaks",
@@ -76,19 +76,19 @@ export default function Tips() {
       </section>
 
       {/* Summer Tips */}
-      <section id="summer-tips" className="py-16 md:py-24">
+      <section id="summer-tips" className="py-10 md:py-14">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
               <Sun className="h-8 w-8 text-primary" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Summer Cooling Tips</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Summer Cooling Tips</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Stay cool and reduce cooling costs during hot Adelaide Hills summers
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               {
                 title: "Block Out Summer Sun",
@@ -117,19 +117,19 @@ export default function Tips() {
       </section>
 
       {/* Year-Round Tips */}
-      <section className="py-16 md:py-24 bg-secondary/20">
+      <section className="py-10 md:py-14 bg-secondary/20">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
               <Zap className="h-8 w-8 text-primary" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Year-Round Energy Savers</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Year-Round Energy Savers</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Simple habits that reduce energy consumption all year long
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               {
                 icon: Lightbulb,
@@ -164,11 +164,11 @@ export default function Tips() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-primary text-primary-foreground">
+      <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Want Personalized Advice?</h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-95">
-            Get a professional energy audit and receive customized recommendations for your home
+          <h2 className="text-4xl md:text-5xl font-bold mb-3 tracking-tight">Want Personalised Advice?</h2>
+          <p className="text-lg mb-6 max-w-2xl mx-auto opacity-95">
+            Get a professional energy audit and receive customised recommendations for your home
           </p>
           <Button size="lg" variant="secondary" className="text-base px-8 py-6 h-auto shadow-lg" asChild>
             <Link href="/book-consultation">Book Free Consultation</Link>

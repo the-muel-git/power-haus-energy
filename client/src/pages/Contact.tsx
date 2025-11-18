@@ -35,10 +35,10 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-20 md:py-28">
+      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">Get in Touch</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">Get in Touch</h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Ready to start saving energy and money? Book your free consultation today.
             </p>
@@ -47,9 +47,9 @@ export default function Contact() {
       </section>
 
       {/* Contact Form and Info */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <Card className="border-2">
@@ -199,17 +199,17 @@ export default function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-accent/5 via-background to-secondary/10">
+      <section className="py-10 md:py-14 bg-gradient-to-br from-accent/5 via-background to-secondary/10">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-10">
+            <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Common Questions</h2>
               <p className="text-lg text-muted-foreground">
                 Everything you need to know about energy audits and passive design
               </p>
             </div>
 
-            <Accordion type="single" collapsible className="space-y-3">
+            <Accordion type="single" collapsible className="space-y-2.5">
               <AccordionItem value="item-1" className="border-2 rounded-lg px-6 bg-background/80 backdrop-blur-sm">
                 <AccordionTrigger className="font-sans font-semibold hover:no-underline">
                   What is an energy audit and what does it include?

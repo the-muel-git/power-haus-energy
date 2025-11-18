@@ -21,10 +21,10 @@ export default function Services() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-20 md:py-28">
+      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">Our Services</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 tracking-tight">Our Services</h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Comprehensive energy solutions designed specifically for Adelaide Hills homes
             </p>
@@ -33,9 +33,9 @@ export default function Services() {
       </section>
 
       {/* Social Proof */}
-      <section className="py-12 border-b border-border bg-secondary/10">
+      <section className="py-8 border-b border-border bg-secondary/10">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center">
             <div className="flex flex-col items-center">
               <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-3">
                 <Users className="h-7 w-7 text-primary" />
@@ -62,16 +62,16 @@ export default function Services() {
       </section>
 
       {/* Why It Matters */}
-      <section className="py-16 md:py-24 bg-secondary/20">
+      <section className="py-10 md:py-14 bg-secondary/20">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Why Professional Energy Assessment Matters</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Understanding your home's energy performance is the first step to meaningful savings
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
@@ -160,16 +160,16 @@ export default function Services() {
       </section>
 
       {/* Additional Services */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Additional Services</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Specialised assessments for specific situations
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
             <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
@@ -258,11 +258,11 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 bg-primary text-primary-foreground">
+      <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Ready to Get Started?</h2>
-            <p className="text-lg mb-8 opacity-90">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
+            <p className="text-lg mb-6 opacity-90">
               Book a consultation today and discover how much you could save while improving your home's comfort
             </p>
             <Button size="lg" variant="secondary" asChild>

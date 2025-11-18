@@ -14,11 +14,11 @@ export default function BookConsultation() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-20 md:py-28">
+      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">Book Your Consultation</h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">Book Your Consultation</h1>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
               Take the first step toward a more comfortable, energy-efficient home. Choose the consultation that's right for you.
             </p>
           </div>
@@ -26,9 +26,9 @@ export default function BookConsultation() {
       </section>
 
       {/* Consultation Options */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
             {/* Energy Audit */}
             <div className="space-y-8">
               <div>
@@ -203,16 +203,16 @@ export default function BookConsultation() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 md:py-24 bg-secondary/20">
+      <section className="py-10 md:py-14 bg-secondary/20">
         <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">How It Works</h2>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">How It Works</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               A straightforward process designed to deliver maximum value
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <Card className="border-2">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
@@ -273,11 +273,11 @@ export default function BookConsultation() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 md:py-28 bg-primary text-primary-foreground">
+      <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">Ready to Get Started?</h2>
-            <p className="text-lg mb-8 opacity-90">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Ready to Get Started?</h2>
+            <p className="text-lg mb-6 opacity-90">
               Book your consultation today and discover how much you could save while improving your home's comfort.
             </p>
             <Button size="lg" variant="secondary" asChild>

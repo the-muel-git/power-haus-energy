@@ -7,10 +7,10 @@ export default function About() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-20 md:py-28">
+      <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">About Power Haus</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 tracking-tight">About Power Haus</h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Helping Adelaide Hills homeowners create comfortable, energy-efficient homes that work with our unique climate.
             </p>
@@ -19,11 +19,11 @@ export default function About() {
       </section>
 
       {/* Our Story */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="container">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Our Story</h2>
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Our Story</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 We combine traditional passive design principles with modern energy assessment technology to help Adelaide Hills homeowners reduce costs and improve comfort.
               </p>
@@ -42,10 +42,10 @@ export default function About() {
       </section>
 
       {/* Mission & Values */}
-      <section className="py-16 md:py-24 bg-secondary/20">
+      <section className="py-10 md:py-14 bg-secondary/20">
         <div className="container">
           <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="border-2 bg-background">
                 <CardHeader className="pb-4">
                   <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
@@ -79,17 +79,17 @@ export default function About() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-14">
         <div className="container">
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Why Choose Power Haus</h2>
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Why Choose Power Haus</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 Local expertise meets proven methodology to deliver results you can measure
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card className="border-2 text-center">
                 <CardHeader className="pb-4">
                   <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
@@ -137,10 +137,10 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-primary text-primary-foreground">
+      <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Ready to Get Started?</h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-95">
+          <h2 className="text-4xl md:text-5xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
+          <p className="text-lg mb-6 max-w-2xl mx-auto opacity-95">
             Let us help you create a more comfortable, energy-efficient home
           </p>
           <Button size="lg" variant="secondary" className="text-base px-8 py-6 h-auto shadow-lg" asChild>
