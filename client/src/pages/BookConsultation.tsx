@@ -17,9 +17,9 @@ export default function BookConsultation() {
       <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">Book Your Consultation</h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6">
-              Take the first step toward a more comfortable, energy-efficient home. Choose the consultation that's right for you.
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">Book Your Consultation</h1>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
+              Choose the right consultation for your home.
             </p>
           </div>
         </div>
@@ -35,63 +35,63 @@ export default function BookConsultation() {
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
                   <Home className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Energy Audit</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Comprehensive assessment of your existing home's energy performance with actionable recommendations.
+                <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Energy Audit</h2>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Comprehensive assessment with actionable recommendations.
                 </p>
               </div>
 
               <Card className="border-2">
                 <CardHeader>
-                  <CardTitle className="text-xl font-sans">What's Included</CardTitle>
+                  <CardTitle className="text-base font-sans">What's Included</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Initial Consultation</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Discussion of your energy concerns, utility bills, and comfort issues
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Initial Consultation</h3>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        Energy concerns, bills, and comfort issues
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Room-by-Room Assessment</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Detailed inspection of insulation, windows, doors, and systems
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Room-by-Room Assessment</h3>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        Inspection of insulation, windows, doors, systems
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Blower Door & Thermal Imaging</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Advanced testing to identify air leaks and heat loss
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Blower Door & Thermal Imaging</h3>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        Testing to identify air leaks and heat loss
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Comprehensive Report</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Prioritized recommendations with costs and projected savings
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Comprehensive Report</h3>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        Prioritised recommendations with costs and savings
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Follow-up Support</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Guidance on implementing recommendations
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Follow-up Support</h3>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        Implementation guidance
                       </p>
                     </div>
                   </div>
@@ -120,63 +120,63 @@ export default function BookConsultation() {
                 <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
                   <Sun className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Passive Design Consultation</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Expert guidance for new builds and major renovations to incorporate energy-efficient design from the start.
+                <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Passive Design Consultation</h2>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Energy-efficient design for new builds and renovations.
                 </p>
               </div>
 
               <Card className="border-2">
                 <CardHeader>
-                  <CardTitle className="text-xl font-sans">What's Included</CardTitle>
+                  <CardTitle className="text-base font-sans">What's Included</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Site Assessment</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Analysis of orientation, topography, and microclimate
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Site Assessment</h3>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        Orientation, topography, microclimate analysis
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Solar Orientation Planning</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Optimal positioning to maximize winter sun, minimize summer heat
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Solar Orientation</h3>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        Maximize winter sun, minimize summer heat
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Thermal Mass & Insulation</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Material recommendations and R-value specifications
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Thermal Mass & Insulation</h3>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        Material recommendations and R-values
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Ventilation & Shading Design</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Window placement, eave sizing, and natural cooling strategies
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Ventilation & Shading</h3>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        Window placement, eaves, natural cooling
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Design Review & Collaboration</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        Work with your architect or builder to integrate principles
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Design Collaboration</h3>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        Work with your architect or builder
                       </p>
                     </div>
                   </div>
@@ -206,9 +206,9 @@ export default function BookConsultation() {
       <section className="py-10 md:py-14 bg-secondary/20">
         <div className="container">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">How It Works</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              A straightforward process designed to deliver maximum value
+            <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">How It Works</h2>
+            <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Simple process for maximum value
             </p>
           </div>
 
@@ -218,11 +218,11 @@ export default function BookConsultation() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">1</span>
                 </div>
-                <CardTitle className="text-center font-sans">Get in Touch</CardTitle>
+                <CardTitle className="text-base text-center font-sans">Get in Touch</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-center leading-relaxed">
-                  Contact us via phone, email, or the booking form to discuss your needs and schedule a consultation.
+                <CardDescription className="text-sm text-center leading-relaxed">
+                  Contact us to discuss needs and schedule.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -232,11 +232,11 @@ export default function BookConsultation() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">2</span>
                 </div>
-                <CardTitle className="text-center font-sans">On-Site Visit</CardTitle>
+                <CardTitle className="text-base text-center font-sans">On-Site Visit</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-center leading-relaxed">
-                  We conduct a thorough assessment of your home or property at a time that works for you.
+                <CardDescription className="text-sm text-center leading-relaxed">
+                  Thorough assessment at your convenience.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -246,11 +246,11 @@ export default function BookConsultation() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">3</span>
                 </div>
-                <CardTitle className="text-center font-sans">Receive Report</CardTitle>
+                <CardTitle className="text-base text-center font-sans">Receive Report</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-center leading-relaxed">
-                  Get a detailed report with prioritised recommendations, cost estimates, and projected savings.
+                <CardDescription className="text-sm text-center leading-relaxed">
+                  Detailed report with recommendations and savings.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -260,11 +260,11 @@ export default function BookConsultation() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <span className="text-2xl font-bold text-primary">4</span>
                 </div>
-                <CardTitle className="text-center font-sans">Take Action</CardTitle>
+                <CardTitle className="text-base text-center font-sans">Take Action</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-center leading-relaxed">
-                  Implement improvements at your own pace with our ongoing support and contractor referrals.
+                <CardDescription className="text-sm text-center leading-relaxed">
+                  Implement improvements with our support.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -276,9 +276,9 @@ export default function BookConsultation() {
       <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Ready to Get Started?</h2>
-            <p className="text-lg mb-6 opacity-90">
-              Book your consultation today and discover how much you could save while improving your home's comfort.
+            <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
+            <p className="text-sm md:text-base mb-6 opacity-90">
+              Book your consultation to discover your savings.
             </p>
             <Button size="lg" variant="secondary" asChild>
               <Link href="/contact">Contact Us Now</Link>

@@ -24,9 +24,9 @@ export default function Services() {
       <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 tracking-tight">Our Services</h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Comprehensive energy solutions designed specifically for Adelaide Hills homes
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">Our Services</h1>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              Energy solutions for Adelaide Hills homes
             </p>
           </div>
         </div>
@@ -65,9 +65,9 @@ export default function Services() {
       <section className="py-10 md:py-14 bg-secondary/20">
         <div className="container">
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Why Professional Energy Assessment Matters</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Understanding your home's energy performance is the first step to meaningful savings
+            <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Why Energy Assessment Matters</h2>
+            <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto">
+              Understanding your home's energy performance drives savings
             </p>
           </div>
 
@@ -91,11 +91,11 @@ export default function Services() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Thermometer className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="font-sans">Improve Comfort</CardTitle>
+                <CardTitle className="text-base font-sans">Improve Comfort</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>
-                  Eliminate cold drafts, hot spots, and temperature fluctuations. Create a home that's comfortable year-round.
+                <CardDescription className="text-sm">
+                  Eliminate drafts, hot spots, and temperature swings.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -105,11 +105,11 @@ export default function Services() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="font-sans">Protect Your Investment</CardTitle>
+                <CardTitle className="text-base font-sans">Protect Your Investment</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>
-                  Identify moisture issues, inadequate insulation, and system problems before they become expensive repairs.
+                <CardDescription className="text-sm">
+                  Identify issues before they become expensive repairs.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -119,11 +119,11 @@ export default function Services() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Lightbulb className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="font-sans">Make Informed Decisions</CardTitle>
+                <CardTitle className="text-base font-sans">Informed Decisions</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>
-                  Our prioritised recommendations show you exactly where to invest for maximum return.
+                <CardDescription className="text-sm">
+                  Prioritised recommendations for maximum return.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -133,11 +133,11 @@ export default function Services() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Wind className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="font-sans">Reduce Environmental Impact</CardTitle>
+                <CardTitle className="text-base font-sans">Lower Impact</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>
-                  Lower your carbon footprint and contribute to a more sustainable future while saving money.
+                <CardDescription className="text-sm">
+                  Reduce carbon footprint while saving money.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -147,11 +147,11 @@ export default function Services() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Home className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="font-sans">Increase Property Value</CardTitle>
+                <CardTitle className="text-base font-sans">Increase Value</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>
-                  Energy-efficient homes are increasingly valued by buyers. Documentation of improvements can boost resale value.
+                <CardDescription className="text-sm">
+                  Energy-efficient homes command higher resale value.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -163,9 +163,9 @@ export default function Services() {
       <section className="py-10 md:py-14">
         <div className="container">
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Additional Services</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Specialised assessments for specific situations
+            <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Additional Services</h2>
+            <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto">
+              Specialised assessments
             </p>
           </div>
 
@@ -175,11 +175,11 @@ export default function Services() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <ClipboardList className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="font-sans">Pre-Purchase Assessment</CardTitle>
+                <CardTitle className="text-base font-sans">Pre-Purchase Assessment</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="mb-3">
-                  Assess a home's energy efficiency and estimated improvement costs before you buy.
+                <CardDescription className="text-sm mb-3">
+                  Assess energy efficiency before you buy.
                 </CardDescription>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -203,11 +203,11 @@ export default function Services() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <CheckCircle2 className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="font-sans">Post-Renovation Verification</CardTitle>
+                <CardTitle className="text-base font-sans">Post-Renovation Verification</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="mb-3">
-                  Verify energy improvements were done correctly and measure actual performance gains.
+                <CardDescription className="text-sm mb-3">
+                  Verify improvements and measure performance gains.
                 </CardDescription>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -231,11 +231,11 @@ export default function Services() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
                   <Clock className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="font-sans">Ongoing Energy Monitoring</CardTitle>
+                <CardTitle className="text-base font-sans">Energy Monitoring</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="mb-3">
-                  Track your home's energy performance over time with annual check-ins.
+                <CardDescription className="text-sm mb-3">
+                  Track performance with annual check-ins.
                 </CardDescription>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -261,9 +261,9 @@ export default function Services() {
       <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
-            <p className="text-lg mb-6 opacity-90">
-              Book a consultation today and discover how much you could save while improving your home's comfort
+            <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
+            <p className="text-sm md:text-base mb-6 opacity-90">
+              Book a consultation to discover your savings
             </p>
             <Button size="lg" variant="secondary" asChild>
               <Link href="/book-consultation">Book Your Consultation</Link>

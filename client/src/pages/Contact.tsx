@@ -38,9 +38,9 @@ export default function Contact() {
       <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">Get in Touch</h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Ready to start saving energy and money? Book your free consultation today.
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">Get in Touch</h1>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              Book your free consultation today.
             </p>
           </div>
         </div>
@@ -54,9 +54,9 @@ export default function Contact() {
             <div className="lg:col-span-2">
               <Card className="border-2">
                 <CardHeader>
-                  <CardTitle className="text-2xl font-sans">Send Us a Message</CardTitle>
-                  <CardDescription className="text-base">
-                    Fill out the form and we'll get back to you within 24 hours
+                  <CardTitle className="text-lg font-sans">Send Us a Message</CardTitle>
+                  <CardDescription className="text-sm">
+                    We'll respond within 24 hours
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -137,7 +137,7 @@ export default function Contact() {
             <div className="space-y-6">
               <Card className="border-2">
                 <CardHeader>
-                  <CardTitle className="font-sans">Contact Details</CardTitle>
+                  <CardTitle className="text-base font-sans">Contact Details</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -145,7 +145,7 @@ export default function Contact() {
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Phone</h3>
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Phone</h3>
                       <a href={BUSINESS_INFO.phoneHref} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                         {BUSINESS_INFO.phone}
                       </a>
@@ -158,7 +158,7 @@ export default function Contact() {
                       <Mail className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Email</h3>
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Email</h3>
                       <a href={BUSINESS_INFO.emailHref} className="text-sm text-muted-foreground hover:text-primary transition-colors break-all">
                         {BUSINESS_INFO.email}
                       </a>
@@ -171,7 +171,7 @@ export default function Contact() {
                       <MapPin className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1 font-sans">Service Area</h3>
+                      <h3 className="text-sm font-semibold mb-1 font-sans">Service Area</h3>
                       <p className="text-sm text-muted-foreground">
                         {BUSINESS_INFO.location}
                       </p>
@@ -185,11 +185,11 @@ export default function Contact() {
 
               <Card className="bg-primary text-primary-foreground border-2 border-primary">
                 <CardHeader>
-                  <CardTitle className="font-sans">Free Consultation</CardTitle>
+                  <CardTitle className="text-base font-sans">Free Consultation</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm opacity-95 leading-relaxed">
-                    Not sure where to start? Book a free 30-minute consultation to discuss your home's energy needs. No obligation, just expert advice.
+                  <p className="text-xs opacity-95 leading-relaxed">
+                    Free 30-minute consultation. No obligation, just expert advice.
                   </p>
                 </CardContent>
               </Card>
@@ -203,55 +203,55 @@ export default function Contact() {
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Common Questions</h2>
-              <p className="text-lg text-muted-foreground">
-                Everything you need to know about energy audits and passive design
+              <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Common Questions</h2>
+              <p className="text-sm md:text-base text-muted-foreground">
+                About energy audits and passive design
               </p>
             </div>
 
             <Accordion type="single" collapsible className="space-y-2.5">
               <AccordionItem value="item-1" className="border-2 rounded-lg px-6 bg-background/80 backdrop-blur-sm">
-                <AccordionTrigger className="font-sans font-semibold hover:no-underline">
-                  What is an energy audit and what does it include?
+                <AccordionTrigger className="text-sm font-sans font-semibold hover:no-underline">
+                  What is an energy audit?
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  An energy audit is a comprehensive assessment of your home's energy performance. We use thermal imaging to identify heat loss, conduct air leakage testing to find draughts, and review your appliances and systems. You'll receive a detailed report with prioritised recommendations and estimated costs and savings for each improvement.
+                <AccordionContent className="text-sm text-muted-foreground">
+                  Comprehensive assessment using thermal imaging and air leakage testing. Includes detailed report with prioritised recommendations, costs, and projected savings.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2" className="border-2 rounded-lg px-6 bg-background/80 backdrop-blur-sm">
-                <AccordionTrigger className="font-sans font-semibold hover:no-underline">
-                  How much can I realistically save on my energy bills?
+                <AccordionTrigger className="text-sm font-sans font-semibold hover:no-underline">
+                  How much can I save on energy bills?
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  Most Adelaide Hills homeowners see savings of 30–50% after implementing our recommendations. The exact amount depends on your current home's condition and which improvements you choose to implement. Simple fixes like sealing air leaks can save 10–15%, whilst comprehensive upgrades including insulation and passive design features can achieve 40–50% reductions.
+                <AccordionContent className="text-sm text-muted-foreground">
+                  Typical savings of 30–50%. Simple fixes save 10–15%, comprehensive upgrades achieve 40–50% reductions.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border-2 rounded-lg px-6 bg-background/80 backdrop-blur-sm">
-                <AccordionTrigger className="font-sans font-semibold hover:no-underline">
-                  What is passive design and is it only for new homes?
+                <AccordionTrigger className="text-sm font-sans font-semibold hover:no-underline">
+                  Is passive design only for new homes?
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  Passive design uses your home's orientation, materials, and layout to naturally regulate temperature without relying on heating and cooling systems. Whilst it's easiest to incorporate in new builds, many passive design principles can be applied to existing homes through renovations—such as adding thermal mass, improving insulation, installing appropriate shading, and optimising natural ventilation.
+                <AccordionContent className="text-sm text-muted-foreground">
+                  No. While easiest in new builds, many principles apply to existing homes through renovations—thermal mass, insulation, shading, and ventilation.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-4" className="border-2 rounded-lg px-6 bg-background/80 backdrop-blur-sm">
-                <AccordionTrigger className="font-sans font-semibold hover:no-underline">
-                  How long does an energy audit take?
+                <AccordionTrigger className="text-sm font-sans font-semibold hover:no-underline">
+                  How long does an audit take?
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  A typical residential energy audit takes 2–3 hours on-site. This includes thermal imaging, air leakage testing, and a thorough inspection of your home's envelope, insulation, windows, and systems. You'll receive your detailed report with recommendations within 5–7 business days.
+                <AccordionContent className="text-sm text-muted-foreground">
+                  2–3 hours on-site. Report delivered within 5–7 business days.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-5" className="border-2 rounded-lg px-6 bg-background/80 backdrop-blur-sm">
-                <AccordionTrigger className="font-sans font-semibold hover:no-underline">
-                  Do you offer rebates or financing options?
+                <AccordionTrigger className="text-sm font-sans font-semibold hover:no-underline">
+                  Are rebates available?
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  Whilst we don't directly offer financing, we can guide you through available South Australian government rebates and incentive programmes for energy efficiency upgrades. We'll identify which improvements qualify for rebates and provide all the documentation you need for your applications. Many improvements pay for themselves within 2–5 years through energy savings.
+                <AccordionContent className="text-sm text-muted-foreground">
+                  We guide you through SA government rebates and incentives. Most improvements pay for themselves within 2–5 years.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

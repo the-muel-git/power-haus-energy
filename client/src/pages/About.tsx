@@ -10,9 +10,9 @@ export default function About() {
       <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 tracking-tight">About Power Haus</h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Helping Adelaide Hills homeowners create comfortable, energy-efficient homes that work with our unique climate.
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">About Power Haus</h1>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              Creating comfortable, energy-efficient homes for Adelaide Hills.
             </p>
           </div>
         </div>
@@ -23,18 +23,15 @@ export default function About() {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Our Story</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                We combine traditional passive design principles with modern energy assessment technology to help Adelaide Hills homeowners reduce costs and improve comfort.
+              <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Our Story</h2>
+              <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Combining passive design with modern energy assessment to help homeowners reduce costs and improve comfort.
               </p>
             </div>
             
-            <div className="prose prose-lg max-w-3xl mx-auto text-muted-foreground">
+            <div className="prose max-w-3xl mx-auto text-muted-foreground text-sm md:text-base">
               <p>
-                From cold, windy winters to hot, dry summers, the Adelaide Hills region demands smart solutions that work with nature. Our unique Mediterranean climate creates temperature extremes that challenge even the best-built homes.
-              </p>
-              <p>
-                We understand these challenges firsthand. That's why we've dedicated ourselves to helping local homeowners create comfortable, energy-efficient spaces that perform beautifully year-round. Every assessment we conduct and every recommendation we make is informed by deep knowledge of our region's specific climate conditions.
+                Adelaide Hills' Mediterranean climate—cold winters and hot summers—demands smart solutions. We help create homes that perform beautifully year-round through deep local climate knowledge.
               </p>
             </div>
           </div>
@@ -51,11 +48,11 @@ export default function About() {
                   <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                     <Target className="h-7 w-7 text-primary" />
                   </div>
-                  <CardTitle className="text-2xl font-sans">Our Mission</CardTitle>
+                  <CardTitle className="text-lg font-sans">Our Mission</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    Make sustainable, energy-efficient living accessible and affordable for every Adelaide Hills homeowner. We believe everyone deserves a comfortable home that doesn't cost the earth to run.
+                  <CardDescription className="text-sm leading-relaxed">
+                    Make energy-efficient living accessible for Adelaide Hills homeowners. Everyone deserves a comfortable home that's affordable to run.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -65,11 +62,11 @@ export default function About() {
                   <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                     <Heart className="h-7 w-7 text-primary" />
                   </div>
-                  <CardTitle className="text-2xl font-sans">Our Values</CardTitle>
+                  <CardTitle className="text-lg font-sans">Our Values</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base leading-relaxed">
-                    Sustainability, integrity, and practical solutions that deliver measurable results. We focus on what works, backed by data and proven methodology.
+                  <CardDescription className="text-sm leading-relaxed">
+                    Sustainability, integrity, and practical solutions. Data-driven results that work.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -83,9 +80,9 @@ export default function About() {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">Why Choose Power Haus</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Local expertise meets proven methodology to deliver results you can measure
+              <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Why Choose Power Haus</h2>
+              <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                Local expertise and proven results
               </p>
             </div>
 
@@ -95,11 +92,11 @@ export default function About() {
                   <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                     <Target className="h-7 w-7 text-primary" />
                   </div>
-                  <CardTitle className="text-xl font-sans">Climate-Specific Expertise</CardTitle>
+                  <CardTitle className="text-base font-sans">Climate-Specific</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="leading-relaxed">
-                    Every solution is tailored for Adelaide Hills' unique Mediterranean climate and extreme temperature variations.
+                  <CardDescription className="text-sm leading-relaxed">
+                    Solutions tailored for Adelaide Hills' Mediterranean climate.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -109,11 +106,11 @@ export default function About() {
                   <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                     <Award className="h-7 w-7 text-primary" />
                   </div>
-                  <CardTitle className="text-xl font-sans">Certified Professionals</CardTitle>
+                  <CardTitle className="text-base font-sans">Certified Professionals</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="leading-relaxed">
-                    Industry-recognised certifications in home energy assessment and sustainable building design practices.
+                  <CardDescription className="text-sm leading-relaxed">
+                    Industry-certified in energy assessment and sustainable design.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -123,11 +120,11 @@ export default function About() {
                   <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 mx-auto">
                     <Heart className="h-7 w-7 text-primary" />
                   </div>
-                  <CardTitle className="text-xl font-sans">Whole-Home Approach</CardTitle>
+                  <CardTitle className="text-base font-sans">Whole-Home Approach</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="leading-relaxed">
-                    We analyse your entire home as an integrated system, providing comprehensive and prioritised recommendations.
+                  <CardDescription className="text-sm leading-relaxed">
+                    Comprehensive analysis with prioritised recommendations.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -139,9 +136,9 @@ export default function About() {
       {/* CTA Section */}
       <section className="py-12 md:py-16 bg-primary text-primary-foreground">
         <div className="container text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
-          <p className="text-lg mb-6 max-w-2xl mx-auto opacity-95">
-            Let us help you create a more comfortable, energy-efficient home
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
+          <p className="text-sm md:text-base mb-6 max-w-2xl mx-auto opacity-95">
+            Create a more comfortable, energy-efficient home
           </p>
           <Button size="lg" variant="secondary" className="text-base px-8 py-6 h-auto shadow-lg" asChild>
             <Link href="/book-consultation">Book Free Consultation</Link>

@@ -15,8 +15,8 @@ export default function NotFound() {
                 <AlertCircle className="h-12 w-12 text-destructive" />
               </div>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">404</h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">404</h1>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               Page Not Found
             </p>
           </div>
@@ -29,14 +29,14 @@ export default function NotFound() {
           <div className="max-w-2xl mx-auto">
             <Card className="border-2">
               <CardHeader className="text-center">
-                <CardTitle className="text-2xl font-sans">Oops! This page doesn't exist</CardTitle>
-                <CardDescription className="text-base">
-                  The page you're looking for may have been moved or deleted.
+                <CardTitle className="text-lg font-sans">Page Doesn't Exist</CardTitle>
+                <CardDescription className="text-sm">
+                  This page may have been moved or deleted.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground text-center leading-relaxed">
-                  Don't worry, you can find plenty of helpful information on our other pages:
+                <p className="text-xs text-muted-foreground text-center leading-relaxed">
+                  Find helpful information on our other pages:
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
