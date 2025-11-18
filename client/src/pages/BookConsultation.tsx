@@ -9,7 +9,6 @@ import {
   FileText
 } from "lucide-react";
 import { Link } from "wouter";
-import ROICalculator from "@/components/features/ROICalculator";
 
 export default function BookConsultation() {
   return (
@@ -22,21 +21,6 @@ export default function BookConsultation() {
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
               Take the first step toward a more comfortable, energy-efficient home. Choose the consultation that's right for you.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Calculator */}
-      <section className="py-16 md:py-24 bg-secondary/20">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">Calculate Your Potential Savings</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                See how much you could save with energy efficiency improvements
-              </p>
-            </div>
-            <ROICalculator />
           </div>
         </div>
       </section>
