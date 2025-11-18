@@ -71,6 +71,8 @@ export default function Contact() {
                           onChange={handleChange}
                           required
                           placeholder="Your full name"
+                          autoComplete="name"
+                          className="h-11"
                         />
                       </div>
                       <div className="space-y-2">
@@ -83,6 +85,9 @@ export default function Contact() {
                           onChange={handleChange}
                           required
                           placeholder="your.email@example.com"
+                          autoComplete="email"
+                          inputMode="email"
+                          className="h-11"
                         />
                       </div>
                     </div>
@@ -97,6 +102,9 @@ export default function Contact() {
                           value={formData.phone}
                           onChange={handleChange}
                           placeholder="(08) 1234 5678"
+                          autoComplete="tel"
+                          inputMode="tel"
+                          className="h-11"
                         />
                       </div>
                       <div className="space-y-2">
@@ -108,6 +116,7 @@ export default function Contact() {
                           onChange={handleChange}
                           required
                           placeholder="e.g., Energy Audit Inquiry"
+                          className="h-11"
                         />
                       </div>
                     </div>
@@ -125,7 +134,7 @@ export default function Contact() {
                       />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full md:w-auto px-8">
+                    <Button type="submit" size="lg" className="w-full md:w-auto px-8 h-12">
                       Send Message
                     </Button>
                   </form>

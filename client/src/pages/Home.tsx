@@ -98,7 +98,7 @@ export default function Home() {
 
             <div className="text-center mt-6">
               <Link href="/services">
-                <Button size="lg" variant="outline" className="text-base border-2 hover:bg-background/80">
+                <Button size="lg" variant="outline" className="text-base border-2 hover:bg-background/80 h-12">
                   View All Services
                 </Button>
               </Link>
@@ -138,7 +138,7 @@ export default function Home() {
                     </div>
                   </div>
                   <Link href="/tips#calculator">
-                    <Button size="lg" className="text-lg px-10 py-7 h-auto shadow-xl hover:shadow-2xl hover:scale-105 transition-all group">
+                    <Button size="lg" className="text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto shadow-xl hover:shadow-2xl hover:scale-105 transition-all group">
                       Try ROI Calculator
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </Button>

@@ -40,25 +40,25 @@ export default function NotFound() {
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
-                  <Button variant="outline" size="lg" asChild>
+                  <Button variant="outline" size="lg" className="h-12" asChild>
                     <Link href="/">
                       <Home className="w-4 h-4 mr-2" />
                       Home Page
                     </Link>
                   </Button>
-                  <Button variant="outline" size="lg" asChild>
+                  <Button variant="outline" size="lg" className="h-12" asChild>
                     <Link href="/services">Our Services</Link>
                   </Button>
-                  <Button variant="outline" size="lg" asChild>
+                  <Button variant="outline" size="lg" className="h-12" asChild>
                     <Link href="/tips">Energy Tips</Link>
                   </Button>
-                  <Button variant="outline" size="lg" asChild>
+                  <Button variant="outline" size="lg" className="h-12" asChild>
                     <Link href="/contact">Contact Us</Link>
                   </Button>
                 </div>
 
                 <div className="pt-4 text-center">
-                  <Button size="lg" asChild>
+                  <Button size="lg" className="h-12" asChild>
                     <Link href="/">
                       <ArrowLeft className="w-4 h-4 mr-2" />
                       Back to Home

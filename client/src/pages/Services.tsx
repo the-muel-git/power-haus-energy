@@ -265,7 +265,7 @@ export default function Services() {
             <p className="text-sm md:text-base mb-6 opacity-90">
               Book a consultation to discover your savings
             </p>
-            <Button size="lg" variant="secondary" asChild>
+            <Button size="lg" variant="secondary" className="h-12 px-8" asChild>
               <Link href="/book-consultation">Book Your Consultation</Link>
             </Button>
           </div>

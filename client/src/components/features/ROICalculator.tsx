@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
-import { TrendingUp, DollarSign, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { TrendingUp, DollarSign, Calendar, Plus, Minus } from "lucide-react";
 
 export default function ROICalculator() {
   const [currentBill, setCurrentBill] = useState(250);
@@ -42,14 +43,34 @@ export default function ROICalculator() {
             <Label className="text-base font-sans">Current Quarterly Energy Bill</Label>
             <span className="text-lg font-bold font-sans text-primary">${currentBill}</span>
           </div>
-          <Slider
-            value={[currentBill]}
-            onValueChange={(value) => setCurrentBill(value[0])}
-            min={100}
-            max={800}
-            step={10}
-            className="w-full"
-          />
+          <div className="flex items-center gap-3">
+            <Button
+              variant="outline"
+              size="icon"
+              className="h-9 w-9 flex-shrink-0"
+              onClick={() => setCurrentBill(Math.max(100, currentBill - 10))}
+              aria-label="Decrease bill amount"
+            >
+              <Minus className="h-4 w-4" />
+            </Button>
+            <Slider
+              value={[currentBill]}
+              onValueChange={(value) => setCurrentBill(value[0])}
+              min={100}
+              max={800}
+              step={10}
+              className="w-full"
+            />
+            <Button
+              variant="outline"
+              size="icon"
+              className="h-9 w-9 flex-shrink-0"
+              onClick={() => setCurrentBill(Math.min(800, currentBill + 10))}
+              aria-label="Increase bill amount"
+            >
+              <Plus className="h-4 w-4" />
+            </Button>
+          </div>
           <p className="text-xs text-muted-foreground">Typical Adelaide Hills range: $200-$500</p>
         </div>
 
@@ -59,14 +80,34 @@ export default function ROICalculator() {
             <Label className="text-base font-sans">Home Size (sqm)</Label>
             <span className="text-lg font-bold font-sans text-primary">{homeSize} sqm</span>
           </div>
-          <Slider
-            value={[homeSize]}
-            onValueChange={(value) => setHomeSize(value[0])}
-            min={80}
-            max={400}
-            step={10}
-            className="w-full"
-          />
+          <div className="flex items-center gap-3">
+            <Button
+              variant="outline"
+              size="icon"
+              className="h-9 w-9 flex-shrink-0"
+              onClick={() => setHomeSize(Math.max(80, homeSize - 10))}
+              aria-label="Decrease home size"
+            >
+              <Minus className="h-4 w-4" />
+            </Button>
+            <Slider
+              value={[homeSize]}
+              onValueChange={(value) => setHomeSize(value[0])}
+              min={80}
+              max={400}
+              step={10}
+              className="w-full"
+            />
+            <Button
+              variant="outline"
+              size="icon"
+              className="h-9 w-9 flex-shrink-0"
+              onClick={() => setHomeSize(Math.min(400, homeSize + 10))}
+              aria-label="Increase home size"
+            >
+              <Plus className="h-4 w-4" />
+            </Button>
+          </div>
           <p className="text-xs text-muted-foreground">Average Adelaide Hills home: 150-250 sqm</p>
         </div>
 
@@ -76,14 +117,34 @@ export default function ROICalculator() {
             <Label className="text-base font-sans">Target Energy Reduction</Label>
             <span className="text-lg font-bold font-sans text-primary">{improvementLevel}%</span>
           </div>
-          <Slider
-            value={[improvementLevel]}
-            onValueChange={(value) => setImprovementLevel(value[0])}
-            min={15}
-            max={50}
-            step={5}
-            className="w-full"
-          />
+          <div className="flex items-center gap-3">
+            <Button
+              variant="outline"
+              size="icon"
+              className="h-9 w-9 flex-shrink-0"
+              onClick={() => setImprovementLevel(Math.max(15, improvementLevel - 5))}
+              aria-label="Decrease improvement level"
+            >
+              <Minus className="h-4 w-4" />
+            </Button>
+            <Slider
+              value={[improvementLevel]}
+              onValueChange={(value) => setImprovementLevel(value[0])}
+              min={15}
+              max={50}
+              step={5}
+              className="w-full"
+            />
+            <Button
+              variant="outline"
+              size="icon"
+              className="h-9 w-9 flex-shrink-0"
+              onClick={() => setImprovementLevel(Math.min(50, improvementLevel + 5))}
+              aria-label="Increase improvement level"
+            >
+              <Plus className="h-4 w-4" />
+            </Button>
+          </div>
           <p className="text-xs text-muted-foreground">
             Basic improvements: 15-25% | Comprehensive: 30-40% | Major renovation: 45-50%
           </p>

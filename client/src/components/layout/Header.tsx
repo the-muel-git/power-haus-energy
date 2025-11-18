@@ -9,6 +9,23 @@ export default function Header() {
   const [location] = useLocation();
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location]);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileMenuOpen]);
+
   // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -60,7 +77,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden"
+          className="md:hidden p-2 -mr-2 hover:bg-accent/50 rounded-lg transition-colors"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
           aria-expanded={mobileMenuOpen}
@@ -69,28 +86,44 @@ export default function Header() {
         </button>
       </nav>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation Backdrop */}
       {mobileMenuOpen && (
-        <div ref={mobileMenuRef} className="md:hidden border-t border-border bg-white">
-          <div className="container py-4 flex flex-col gap-4">
-            {NAVIGATION_LINKS.map((item) => (
-              <Link key={item.name} href={item.href}>
-                <span
-                  className={`text-sm font-medium font-sans block py-2 cursor-pointer ${
-                    location === item.href ? "text-primary" : "text-foreground"
-                  }`}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </span>
-              </Link>
-            ))}
-            <Button size="sm" className="w-full font-sans" asChild>
+        <div 
+          className="fixed inset-0 bg-black/20 z-40 md:hidden animate-in fade-in duration-200"
+          onClick={() => setMobileMenuOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
+      {/* Mobile Navigation */}
+      <div
+        ref={mobileMenuRef}
+        className={`fixed top-[73px] left-0 right-0 bg-white border-t border-border shadow-lg z-50 md:hidden transition-all duration-300 ease-in-out ${
+          mobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
+        }`}
+      >
+        <div className="container py-6 flex flex-col gap-1 max-h-[calc(100vh-73px)] overflow-y-auto">
+          {NAVIGATION_LINKS.map((item) => (
+            <Link key={item.name} href={item.href}>
+              <span
+                className={`text-base font-medium font-sans block py-3 px-4 rounded-lg cursor-pointer transition-colors ${
+                  location === item.href 
+                    ? "text-primary bg-primary/10 font-semibold" 
+                    : "text-foreground hover:bg-accent/50"
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
+              </span>
+            </Link>
+          ))}
+          <div className="mt-4 px-4">
+            <Button size="lg" className="w-full font-sans h-12" asChild>
               <Link href="/book-consultation">Book Consultation</Link>
             </Button>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

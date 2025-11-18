@@ -109,7 +109,7 @@ export default function BookConsultation() {
                 </div>
               </div>
 
-              <Button size="lg" className="w-full" asChild>
+              <Button size="lg" className="w-full h-12" asChild>
                 <Link href="/contact">Book Energy Audit</Link>
               </Button>
             </div>
@@ -194,7 +194,7 @@ export default function BookConsultation() {
                 </div>
               </div>
 
-              <Button size="lg" className="w-full" asChild>
+              <Button size="lg" className="w-full h-12" asChild>
                 <Link href="/contact">Book Passive Design Consultation</Link>
               </Button>
             </div>
@@ -280,7 +280,7 @@ export default function BookConsultation() {
             <p className="text-sm md:text-base mb-6 opacity-90">
               Book your consultation to discover your savings.
             </p>
-            <Button size="lg" variant="secondary" asChild>
+            <Button size="lg" variant="secondary" className="h-12 px-8" asChild>
               <Link href="/contact">Contact Us Now</Link>
             </Button>
           </div>
