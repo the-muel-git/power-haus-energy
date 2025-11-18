@@ -10,30 +10,13 @@ export default function About() {
       <section className="bg-gradient-to-br from-secondary/30 via-background to-accent/20 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">About Power Haus</h1>
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              Creating comfortable, energy-efficient homes for Adelaide Hills.
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 tracking-tight">Our Story</h1>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
+              Combining passive design with modern energy assessment to help Adelaide Hills homeowners reduce costs and improve comfort.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Story */}
-      <section className="py-10 md:py-14">
-        <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-8">
-              <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Our Story</h2>
-              <p className="text-sm md:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Combining passive design with modern energy assessment to help homeowners reduce costs and improve comfort.
-              </p>
-            </div>
-            
-            <div className="prose max-w-3xl mx-auto text-muted-foreground text-sm md:text-base">
-              <p>
-                Adelaide Hills' Mediterranean climate—cold winters and hot summers—demands smart solutions. We help create homes that perform beautifully year-round through deep local climate knowledge.
-              </p>
-            </div>
+            <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              Adelaide Hills' Mediterranean climate—cold winters and hot summers—demands smart solutions. We help create homes that perform beautifully year-round through deep local climate knowledge.
+            </p>
           </div>
         </div>
       </section>

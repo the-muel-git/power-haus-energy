@@ -20,7 +20,7 @@ export default function Tips() {
       </section>
 
       {/* Savings Calculator */}
-      <section className="py-10 md:py-14 bg-secondary/20">
+      <section id="calculator" className="py-10 md:py-14 bg-secondary/20">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
@@ -34,131 +34,85 @@ export default function Tips() {
         </div>
       </section>
 
-      {/* Winter Tips */}
-      <section id="winter-tips" className="py-10 md:py-14">
+      {/* All Tips Combined */}
+      <section className="py-10 md:py-14">
         <div className="container">
-          <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Snowflake className="h-8 w-8 text-primary" />
-            </div>
-            <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Winter Tips</h2>
+          <div className="text-center mb-10">
+            <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Energy Saving Tips</h2>
             <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
-              Reduce heating costs during winter
+              Practical tips for all seasons
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              {
-                title: "Seal Drafts",
-                description: "Check windows, doors, and gaps. Use weather stripping and caulk. Small gaps significantly increase heating costs."
-              },
-              {
-                title: "Maximize Winter Sun",
-                description: "Open north-facing curtains during the day. Close at night. Can reduce heating needs by 10-20%."
-              },
-              {
-                title: "Set Thermostat Wisely",
-                description: "18-20°C when home. Each degree above 20°C adds 10% to costs. Lower to 15°C when sleeping or away."
-              }
-            ].map((tip, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <CardTitle className="text-base font-sans">{tip.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-sm">{tip.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Summer Tips */}
-      <section id="summer-tips" className="py-10 md:py-14">
-        <div className="container">
-          <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Sun className="h-8 w-8 text-primary" />
-            </div>
-            <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Summer Tips</h2>
-            <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
-              Reduce cooling costs during summer
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              {
-                title: "Block Summer Sun",
-                description: "Close curtains and blinds on windows with direct sunlight. External shading reduces heat by up to 90%."
-              },
-              {
-                title: "Capture Evening Breezes",
-                description: "Open windows in the evening for south-westerly breezes. Create cross-flow ventilation to flush out hot air."
-              },
-              {
-                title: "Set Cooling Higher",
-                description: "24-26°C for AC. Each degree lower adds 5-10% to costs. Use fans with AC to feel cooler."
-              }
-            ].map((tip, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <CardTitle className="text-base font-sans">{tip.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-sm">{tip.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Year-Round Tips */}
-      <section className="py-10 md:py-14 bg-secondary/20">
-        <div className="container">
-          <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Zap className="h-8 w-8 text-primary" />
-            </div>
-            <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">Year-Round Tips</h2>
-            <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
-              Reduce energy consumption year-round
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              {
-                icon: Lightbulb,
-                title: "Switch to LED",
-                description: "LEDs use 75% less energy and last 25x longer. Replacing 10 bulbs saves $100+ yearly."
-              },
-              {
-                icon: ThermometerSun,
-                title: "Upgrade Insulation",
-                description: "Ceiling R6.0, walls R4.0, floors R4.0. Reduces heating/cooling costs by 40-50%."
-              },
-              {
-                icon: Wind,
-                title: "Maintain HVAC",
-                description: "Clean filters every 3 months. Annual service. Dirty filters increase energy use by 15%."
-              }
-            ].map((tip, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-2">
-                    <tip.icon className="h-6 w-6 text-primary" />
+          <div className="space-y-6 max-w-6xl mx-auto">
+            {/* Winter Tips Row */}
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 border-2 border-blue-100 dark:border-blue-900/50 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-blue-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Snowflake className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                </div>
+                <h3 className="text-lg font-bold text-blue-900 dark:text-blue-100">Winter</h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {[
+                  { title: "Seal Drafts", description: "Weather stripping and caulk. Small gaps increase heating costs." },
+                  { title: "Maximize Winter Sun", description: "Open north curtains by day, close at night. Saves 10-20%." },
+                  { title: "Set Thermostat Wisely", description: "18-20°C when home. Each degree above adds 10% to costs." }
+                ].map((tip, index) => (
+                  <div key={index} className="bg-background/60 backdrop-blur-sm rounded-lg p-4 border border-blue-100 dark:border-blue-900/30">
+                    <h4 className="font-semibold mb-1 text-sm">{tip.title}</h4>
+                    <p className="text-xs text-muted-foreground">{tip.description}</p>
                   </div>
-                  <CardTitle className="text-base font-sans">{tip.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-sm">{tip.description}</CardDescription>
-                </CardContent>
-              </Card>
-            ))}
+                ))}
+              </div>
+            </div>
+
+            {/* Summer Tips Row */}
+            <div className="bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20 border-2 border-orange-100 dark:border-orange-900/50 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-orange-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Sun className="h-5 w-5 text-orange-600 dark:text-orange-400" />
+                </div>
+                <h3 className="text-lg font-bold text-orange-900 dark:text-orange-100">Summer</h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {[
+                  { title: "Block Summer Sun", description: "Close curtains with direct sun. External shading reduces heat 90%." },
+                  { title: "Evening Breezes", description: "Open windows for south-west breezes. Cross-flow ventilation." },
+                  { title: "Set Cooling Higher", description: "24-26°C for AC. Each degree lower adds 5-10% to costs." }
+                ].map((tip, index) => (
+                  <div key={index} className="bg-background/60 backdrop-blur-sm rounded-lg p-4 border border-orange-100 dark:border-orange-900/30">
+                    <h4 className="font-semibold mb-1 text-sm">{tip.title}</h4>
+                    <p className="text-xs text-muted-foreground">{tip.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Year-Round Tips Row */}
+            <div className="bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-950/20 dark:to-teal-950/20 border-2 border-emerald-100 dark:border-emerald-900/50 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-emerald-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Zap className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+                </div>
+                <h3 className="text-lg font-bold text-emerald-900 dark:text-emerald-100">Year-Round</h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {[
+                  { icon: Lightbulb, title: "Switch to LED", description: "Use 75% less energy. Replacing 10 bulbs saves $100+ yearly." },
+                  { icon: ThermometerSun, title: "Upgrade Insulation", description: "R6.0 ceiling, R4.0 walls/floors. Reduces costs by 40-50%." },
+                  { icon: Wind, title: "Maintain HVAC", description: "Clean filters every 3 months. Dirty filters add 15% to costs." }
+                ].map((tip, index) => (
+                  <div key={index} className="bg-background/60 backdrop-blur-sm rounded-lg p-4 border border-emerald-100 dark:border-emerald-900/30">
+                    <div className="flex items-center gap-2 mb-2">
+                      <tip.icon className="h-4 w-4 text-emerald-600 dark:text-emerald-400 flex-shrink-0" />
+                      <h4 className="font-semibold text-sm">{tip.title}</h4>
+                    </div>
+                    <p className="text-xs text-muted-foreground">{tip.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -191,17 +191,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* ROI Calculator CTA */}
       <section className="relative py-12 md:py-16 bg-gradient-to-br from-primary via-primary to-primary/90 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]"></div>
         <div className="container text-center relative">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Ready to Get Started?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight">Calculate Your Savings</h2>
           <p className="text-sm md:text-base mb-6 max-w-2xl mx-auto opacity-95">
-            Book a free consultation to discover your savings
+            See how much you could save with energy-efficient improvements
           </p>
-          <Link href="/book-consultation">
+          <Link href="/tips#calculator">
             <Button size="lg" variant="secondary" className="text-base px-8 py-6 h-auto shadow-2xl hover:shadow-xl hover:scale-105 transition-all">
-              Book Free Consultation
+              Try ROI Calculator
             </Button>
           </Link>
         </div>
